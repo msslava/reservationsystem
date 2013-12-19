@@ -252,7 +252,7 @@ class en_us extends Language
 		$strings['FirstTimeUser?'] = 'Первый раз здесь?';
 		$strings['CreateAnAccount'] = 'Создать учетную запись';
 		$strings['ViewSchedule'] = 'Смотреть график';
-		$strings['ForgotMyPassword'] = 'Я забыл свой пароль (Я - Маша Растеряша)';
+		$strings['ForgotMyPassword'] = 'Я забыл свой пароль';
 		$strings['YouWillBeEmailedANewPassword'] = 'Вам будет выслан новый случайно сгенерированный пароль';
 		$strings['Close'] = 'Закрыть';
 		$strings['ExportToCSV'] = 'Экспортировать в CSV';
