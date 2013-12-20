@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2013-12-18 20:42:06
+<?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:31:47
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/Controls/Attributes/SingleLineTextbox.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:147615353552b1fa8e45efd8-11388949%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:152347398052b49b238e9f85-72648558%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '147615353552b1fa8e45efd8-11388949',
+  'nocache_hash' => '152347398052b49b238e9f85-72648558',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_52b1fa8e4864c',
+  'unifunc' => 'content_52b49b2390c98',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52b1fa8e4864c')) {function content_52b1fa8e4864c($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52b49b2390c98')) {function content_52b49b2390c98($_smarty_tpl) {?>
 <label class="customAttribute" for="<?php echo $_smarty_tpl->tpl_vars['attributeName']->value;?>
 "><?php echo htmlspecialchars($_smarty_tpl->tpl_vars['attribute']->value->Label(), ENT_QUOTES, 'UTF-8', true);?>
 </label>

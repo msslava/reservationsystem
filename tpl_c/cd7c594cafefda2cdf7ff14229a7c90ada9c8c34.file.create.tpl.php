@@ -1,13 +1,13 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2013-12-18 20:42:05
+<?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:31:47
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/Reservation/create.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:7363131552b1fa8de0db23-73850934%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:184179628352b49b2333c874-07222215%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
     'cd7c594cafefda2cdf7ff14229a7c90ada9c8c34' => 
     array (
       0 => '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/Reservation/create.tpl',
-      1 => 1386802891,
+      1 => 1387567901,
       2 => 'file',
     ),
     '9ce46826947358c03c8b1758cbd59c0e4ffd86ca' => 
@@ -17,7 +17,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '7363131552b1fa8de0db23-73850934',
+  'nocache_hash' => '184179628352b49b2333c874-07222215',
   'function' => 
   array (
   ),
@@ -74,14 +74,14 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_52b1fa8e377ba',
+  'unifunc' => 'content_52b49b237fa1a',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52b1fa8e377ba')) {function content_52b1fa8e377ba($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52b49b237fa1a')) {function content_52b49b237fa1a($_smarty_tpl) {?>
 
 <?php /*  Call merged included template "globalheader.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('cssFiles'=>'css/reservation.css,css/jquery.qtip.min.css'), 0, '7363131552b1fa8de0db23-73850934');
-content_52b1fa8de60ad($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('cssFiles'=>'css/reservation.css,css/jquery.qtip.min.css'), 0, '184179628352b49b2333c874-07222215');
+content_52b49b233791f($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "globalheader.tpl" */?>
 
 
@@ -158,7 +158,7 @@ $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "globalheade
             <div style="clear:both;height:0;">&nbsp;</div>
         </li>
         <li>
-            <label for="BeginDate" style="width:50px;display:inline-block;"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'BeginDate'),$_smarty_tpl);?>
+            <label for="BeginDate" style="width:94px;display:inline-block;"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'BeginDate'),$_smarty_tpl);?>
 </label>
             <input type="text" id="BeginDate" class="dateinput" value="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0][0]->FormatDate(array('date'=>$_smarty_tpl->tpl_vars['StartDate']->value),$_smarty_tpl);?>
 "/>
@@ -167,7 +167,7 @@ $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "globalheade
                    value="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0][0]->FormatDate(array('date'=>$_smarty_tpl->tpl_vars['StartDate']->value,'key'=>'system'),$_smarty_tpl);?>
 "/>
             <select id="BeginPeriod" <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formname'][0][0]->GetFormName(array('key'=>'BEGIN_PERIOD'),$_smarty_tpl);?>
- class="pulldown" style="width:150px">
+ class="pulldown" style="width:134px">
 			<?php  $_smarty_tpl->tpl_vars['period'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['period']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['StartPeriods']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['period']->key => $_smarty_tpl->tpl_vars['period']->value){
@@ -187,7 +187,7 @@ $_smarty_tpl->tpl_vars['period']->_loop = true;
             </select>
         </li>
         <li>
-            <label for="EndDate" style="width:50px;display:inline-block;"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'EndDate'),$_smarty_tpl);?>
+            <label for="EndDate" style="width:94px;display:inline-block;"><?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['translate'][0][0]->SmartyTranslate(array('key'=>'EndDate'),$_smarty_tpl);?>
 </label>
             <input type="text" id="EndDate" class="dateinput" value="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0][0]->FormatDate(array('date'=>$_smarty_tpl->tpl_vars['EndDate']->value),$_smarty_tpl);?>
 "/>
@@ -196,7 +196,7 @@ $_smarty_tpl->tpl_vars['period']->_loop = true;
                    value="<?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formatdate'][0][0]->FormatDate(array('date'=>$_smarty_tpl->tpl_vars['EndDate']->value,'key'=>'system'),$_smarty_tpl);?>
 "/>
             <select id="EndPeriod" <?php echo $_smarty_tpl->smarty->registered_plugins[Smarty::PLUGIN_FUNCTION]['formname'][0][0]->GetFormName(array('key'=>'END_PERIOD'),$_smarty_tpl);?>
- class="pulldown" style="width:150px">
+ class="pulldown" style="width:134px">
 			<?php  $_smarty_tpl->tpl_vars['period'] = new Smarty_Variable; $_smarty_tpl->tpl_vars['period']->_loop = false;
  $_from = $_smarty_tpl->tpl_vars['EndPeriods']->value; if (!is_array($_from) && !is_object($_from)) { settype($_from, 'array');}
 foreach ($_from as $_smarty_tpl->tpl_vars['period']->key => $_smarty_tpl->tpl_vars['period']->value){
@@ -619,9 +619,9 @@ $_smarty_tpl->tpl_vars['accessory']->_loop = true;
 </script>
 
 <?php echo $_smarty_tpl->getSubTemplate ('globalfooter.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
-<?php }} ?><?php /* Smarty version Smarty-3.1.7, created on 2013-12-18 20:42:05
+<?php }} ?><?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:31:47
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/globalheader.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_52b1fa8de60ad')) {function content_52b1fa8de60ad($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52b49b233791f')) {function content_52b49b233791f($_smarty_tpl) {?>
 <?php echo '<?xml';?> version="1.0" encoding="<?php echo $_smarty_tpl->tpl_vars['Charset']->value;?>
 "<?php echo '?>';?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"

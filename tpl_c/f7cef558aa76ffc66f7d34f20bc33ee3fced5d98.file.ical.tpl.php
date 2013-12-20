@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2013-12-16 20:05:14
+<?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:31:51
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/Export/ical.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:114968822952af4eea506e99-64397499%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:183286515152b49b2782b4a7-75583765%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '114968822952af4eea506e99-64397499',
+  'nocache_hash' => '183286515152b49b2782b4a7-75583765',
   'function' => 
   array (
   ),
@@ -24,9 +24,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_52af4eea5aba1',
+  'unifunc' => 'content_52b49b278cbb7',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52af4eea5aba1')) {function content_52af4eea5aba1($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_regex_replace')) include '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../lib/external/Smarty/plugins/modifier.regex_replace.php';
+<?php if ($_valid && !is_callable('content_52b49b278cbb7')) {function content_52b49b278cbb7($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_regex_replace')) include '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../lib/external/Smarty/plugins/modifier.regex_replace.php';
 ?>
 BEGIN:VCALENDAR
 VERSION:2.0

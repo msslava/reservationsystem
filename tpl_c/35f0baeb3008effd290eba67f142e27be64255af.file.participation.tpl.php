@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2013-12-18 20:42:06
+<?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:31:47
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/Reservation/participation.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:28198325152b1fa8e439d84-14124749%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:96008057152b49b238ca452-20421408%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,15 +11,15 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '28198325152b1fa8e439d84-14124749',
+  'nocache_hash' => '96008057152b49b238ca452-20421408',
   'function' => 
   array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_52b1fa8e4563a',
+  'unifunc' => 'content_52b49b238e46d',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52b1fa8e4563a')) {function content_52b1fa8e4563a($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52b49b238e46d')) {function content_52b49b238e46d($_smarty_tpl) {?>
 <div id="reservationParticipation">
 	<ul class="no-style">
 		<li>

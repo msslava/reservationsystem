@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2013-12-16 20:24:59
+<?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:32:31
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/schedule-flipped.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:180187052152af538b5c18a1-91536730%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:128958496852b49b4f720077-51572689%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -23,7 +23,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '180187052152af538b5c18a1-91536730',
+  'nocache_hash' => '128958496852b49b4f720077-51572689',
   'function' => 
   array (
     'displayGeneralReserved' => 
@@ -114,9 +114,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => 0,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_52af538bae31e',
+  'unifunc' => 'content_52b49b4fc5d39',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52af538bae31e')) {function content_52af538bae31e($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_regex_replace')) include '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../lib/external/Smarty/plugins/modifier.regex_replace.php';
+<?php if ($_valid && !is_callable('content_52b49b4fc5d39')) {function content_52b49b4fc5d39($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_regex_replace')) include '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../lib/external/Smarty/plugins/modifier.regex_replace.php';
 ?>
 
 
@@ -246,8 +246,8 @@ span="<?php echo $_smarty_tpl->tpl_vars['Slot']->value->PeriodSpan();?>
 
 	<?php /*  Call merged included template "globalheader.tpl" */
 $_tpl_stack[] = $_smarty_tpl;
- $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('cssFiles'=>'css/schedule.css,css/jquery.qtip.min.css'), 0, '180187052152af538b5c18a1-91536730');
-content_52af538b6e847($_smarty_tpl);
+ $_smarty_tpl = $_smarty_tpl->setupInlineSubTemplate('globalheader.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array('cssFiles'=>'css/schedule.css,css/jquery.qtip.min.css'), 0, '128958496852b49b4f720077-51572689');
+content_52b49b4f85118($_smarty_tpl);
 $_smarty_tpl = array_pop($_tpl_stack); /*  End of included template "globalheader.tpl" */?>
 
 
@@ -524,9 +524,9 @@ if (!empty($_capture_buffer)) {
 
 
 <?php echo $_smarty_tpl->getSubTemplate ('globalfooter.tpl', $_smarty_tpl->cache_id, $_smarty_tpl->compile_id, null, null, array(), 0);?>
-<?php }} ?><?php /* Smarty version Smarty-3.1.7, created on 2013-12-16 20:24:59
+<?php }} ?><?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:32:31
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/globalheader.tpl" */ ?>
-<?php if ($_valid && !is_callable('content_52af538b6e847')) {function content_52af538b6e847($_smarty_tpl) {?>
+<?php if ($_valid && !is_callable('content_52b49b4f85118')) {function content_52b49b4f85118($_smarty_tpl) {?>
 <?php echo '<?xml';?> version="1.0" encoding="<?php echo $_smarty_tpl->tpl_vars['Charset']->value;?>
 "<?php echo '?>';?>
 <!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN"

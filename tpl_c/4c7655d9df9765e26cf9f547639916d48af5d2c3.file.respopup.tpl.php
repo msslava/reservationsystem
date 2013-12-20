@@ -1,6 +1,6 @@
-<?php /* Smarty version Smarty-3.1.7, created on 2013-12-16 20:32:16
+<?php /* Smarty version Smarty-3.1.7, created on 2013-12-20 20:32:44
          compiled from "/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../tpl/Ajax/respopup.tpl" */ ?>
-<?php /*%%SmartyHeaderCode:32743179352af55406a35b8-55335824%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
+<?php /*%%SmartyHeaderCode:55709086252b49b5c169963-21408394%%*/if(!defined('SMARTY_DIR')) exit('no direct access allowed');
 $_valid = $_smarty_tpl->decodeProperties(array (
   'file_dependency' => 
   array (
@@ -11,7 +11,7 @@ $_valid = $_smarty_tpl->decodeProperties(array (
       2 => 'file',
     ),
   ),
-  'nocache_hash' => '32743179352af55406a35b8-55335824',
+  'nocache_hash' => '55709086252b49b5c169963-21408394',
   'function' => 
   array (
   ),
@@ -35,9 +35,9 @@ $_valid = $_smarty_tpl->decodeProperties(array (
   ),
   'has_nocache_code' => false,
   'version' => 'Smarty-3.1.7',
-  'unifunc' => 'content_52af554078070',
+  'unifunc' => 'content_52b49b5c24f9f',
 ),false); /*/%%SmartyHeaderCode%%*/?>
-<?php if ($_valid && !is_callable('content_52af554078070')) {function content_52af554078070($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_truncate')) include '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../lib/external/Smarty/plugins/modifier.truncate.php';
+<?php if ($_valid && !is_callable('content_52b49b5c24f9f')) {function content_52b49b5c24f9f($_smarty_tpl) {?><?php if (!is_callable('smarty_modifier_truncate')) include '/Applications/XAMPP/xamppfiles/htdocs/reservationsystem/lib/Common/../../lib/external/Smarty/plugins/modifier.truncate.php';
 ?>
 <?php if ($_smarty_tpl->tpl_vars['authorized']->value){?>
 <div class="res_popup_details" style="margin:0">

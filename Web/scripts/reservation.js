@@ -129,6 +129,12 @@ function Reservation(opts) {
 	// pre-submit callback 
 	Reservation.prototype.preSubmit = function(formData, jqForm, options) {
 
+		if ($('#reservationTitle').val().length <= 0)
+		{
+			alert('Название проекта ОБЯЗАТЕЛЬНО для заполнения.');
+			return false;
+		}
+
 		$('#dialogSave').dialog('open');
 		$('#result').hide();
 		$('#creatingNotification').show();

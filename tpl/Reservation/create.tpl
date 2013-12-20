@@ -77,11 +77,11 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
             <div style="clear:both;height:0;">&nbsp;</div>
         </li>
         <li>
-            <label for="BeginDate" style="width:50px;display:inline-block;">{translate key='BeginDate'}</label>
+            <label for="BeginDate" style="width:94px;display:inline-block;">{translate key='BeginDate'}</label>
             <input type="text" id="BeginDate" class="dateinput" value="{formatdate date=$StartDate}"/>
             <input type="hidden" id="formattedBeginDate" {formname key=BEGIN_DATE}
                    value="{formatdate date=$StartDate key=system}"/>
-            <select id="BeginPeriod" {formname key=BEGIN_PERIOD} class="pulldown" style="width:150px">
+            <select id="BeginPeriod" {formname key=BEGIN_PERIOD} class="pulldown" style="width:134px">
 			{foreach from=$StartPeriods item=period}
 				{if $period->IsReservable()}
 					{assign var='selected' value=''}
@@ -94,11 +94,11 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
             </select>
         </li>
         <li>
-            <label for="EndDate" style="width:50px;display:inline-block;">{translate key='EndDate'}</label>
+            <label for="EndDate" style="width:94px;display:inline-block;">{translate key='EndDate'}</label>
             <input type="text" id="EndDate" class="dateinput" value="{formatdate date=$EndDate}"/>
             <input type="hidden" id="formattedEndDate" {formname key=END_DATE}
                    value="{formatdate date=$EndDate key=system}"/>
-            <select id="EndPeriod" {formname key=END_PERIOD} class="pulldown" style="width:150px">
+            <select id="EndPeriod" {formname key=END_PERIOD} class="pulldown" style="width:134px">
 			{foreach from=$EndPeriods item=period name=endPeriods}
 				{if $period->BeginDate()->IsMidnight()}
                     <option value="{$period->Begin()}"{$selected}>{$period->Label()}</option>
