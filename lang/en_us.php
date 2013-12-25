@@ -43,7 +43,7 @@ class en_us extends Language
 		$dates['period_time'] = 'H:i';
 		$dates['general_date_js'] = 'dd.mm.yy';
 		$dates['calendar_time'] = 'HH:mm';
-		$dates['calendar_dates'] = 'd/M';
+		$dates['calendar_dates'] = 'd.M';
 
 		$this->Dates = $dates;
 
@@ -101,9 +101,9 @@ class en_us extends Language
 		$strings['Error'] = 'Ошибка';
 		$strings['ReturnToPreviousPage'] = 'Вернуться на предыдущую страницу';
 		$strings['UnknownError'] = 'Неизвестная ошибка';
-		$strings['InsufficientPermissionsError'] = 'You do not have permission to access this resource';
-		$strings['MissingReservationResourceError'] = 'A resource was not selected';
-		$strings['MissingReservationScheduleError'] = 'A schedule was not selected';
+		$strings['InsufficientPermissionsError'] = 'Вы не имеете права доступа к этому оборудованию';
+		$strings['MissingReservationResourceError'] = 'Оборудование не было выбрано';
+		$strings['MissingReservationScheduleError'] = 'График не был выбран';
 		$strings['DoesNotRepeat'] = 'Не повторять';
 		$strings['Daily'] = 'Ежедневно';
 		$strings['Weekly'] = 'Еженедельно';
@@ -224,8 +224,8 @@ class en_us extends Language
 		$strings['Accessories'] = 'Аксессуары:';
 		$strings['ParticipantList'] = 'Список участников';
 		$strings['InvitationList'] = 'Invitees';
-		$strings['AccessoryName'] = 'Accessory Name';
-		$strings['QuantityAvailable'] = 'Quantity Available';
+		$strings['AccessoryName'] = 'Название аксессуара';
+		$strings['QuantityAvailable'] = 'Доступное колличество';
 		$strings['Resources'] = 'Оборудование';
 		$strings['Participants'] = 'Участники';
 		$strings['User'] = 'Пользователь';
@@ -234,7 +234,7 @@ class en_us extends Language
 		$strings['Approve'] = 'Утвердить';
 		$strings['Page'] = 'Страница';
 		$strings['Rows'] = 'Строки';
-		$strings['Unlimited'] = 'Unlimited';
+		$strings['Unlimited'] = 'Неограничено';
 		$strings['Email'] = 'Email';
 		$strings['EmailAddress'] = 'Email';
 		$strings['Phone'] = 'Телефон';
@@ -290,7 +290,7 @@ class en_us extends Language
 		$strings['CreatingReservation'] = 'Creating Reservation';
 		$strings['UpdatingReservation'] = 'Updating Reservation';
 		$strings['DeleteWarning'] = 'Это действие необратимо и безвозвратно!';
-		$strings['DeleteAccessoryWarning'] = 'Deleting this accessory will remove it from all reservations.';
+		$strings['DeleteAccessoryWarning'] = 'Удаление этого аксессуара удалит его из всех резервирований.';
 		$strings['AddAccessory'] = 'Добавить аксессуар';
 		$strings['AddBlackout'] = 'Добавить нерабочее время';
 		$strings['AllResourcesOn'] = 'Все оборудование в ';
