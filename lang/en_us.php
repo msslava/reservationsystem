@@ -465,8 +465,8 @@ class en_us extends Language
 		$strings['SetInstallPassword'] = 'Вы должны создать пароль перед установкой Системы Планирования.';
 		$strings['InstallPasswordInstructions'] = 'In %s please set %s to a password which is random and difficult to guess, then return to this page.<br/>You can use %s';
 		$strings['NoUpgradeNeeded'] = 'Необходимые обновления отсутствуют. Запуск процесса установки удалит все существующие данные и установит новую копию Системы Планирования!';
-		$strings['ProvideInstallPassword'] = 'Please provide your installation password.';
-		$strings['InstallPasswordLocation'] = 'This can be found at %s in %s.';
+		$strings['ProvideInstallPassword'] = 'Пожалуйста, введите установочный пароль.';
+		$strings['InstallPasswordLocation'] = 'Это может быть изменено в %s в секции %s.';
 		$strings['VerifyInstallSettings'] = 'Проверьте следующие настройки по-умолчанию, прежде чем продолжить. Или измените их в %s.';
 		$strings['DatabaseName'] = 'Database Name';
 		$strings['DatabaseUser'] = 'Database User';
