@@ -1,9 +1,9 @@
-DROP DATABASE IF EXISTS phpscheduleit2;
+DROP DATABASE IF EXISTS sklad;
 
-CREATE DATABASE phpscheduleit2;
+CREATE DATABASE sklad;
 
-USE phpscheduleit2;
-GRANT ALL on phpscheduleit2.* to 'schedule_user'@'127.0.0.1' identified by 'password';SET foreign_key_checks = 0;
+USE sklad;
+GRANT ALL on sklad.* to 'sklad'@'127.0.0.1' identified by 'EeM7kahl';SET foreign_key_checks = 0;
 
 --
 -- Table structure for table `announcements`

@@ -1,5 +1,5 @@
-DROP DATABASE IF EXISTS phpscheduleit2;
+DROP DATABASE IF EXISTS sklad;
 
-CREATE DATABASE phpscheduleit2;
+CREATE DATABASE sklad;
 
-USE phpscheduleit2;
+USE sklad;
