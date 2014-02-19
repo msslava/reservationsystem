@@ -64,11 +64,20 @@
 	height: 100%;
 }
 
-#participantList, #inviteeList {
+#participantList {
 	height: 100px;
 	width: 100%;
 	overflow-y: auto;
 	border: solid 1px #ededed;
+}
+
+#inviteeList {
+	height: 160px;
+	width: 97%;
+	border: solid 1px #ededed;
+	padding-left: 15px;
+	font-size: 08pt;
+	color: red;
 }
 
 #accessories {

@@ -33,20 +33,24 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			</div>
 			<div id="participantDialog" title="{translate key=AddParticipants}" class="dialog"></div>
 		</li>
-<!--		<li>
+		<BR>
+			<BR>
+		<li>
 			<label>{translate key="InvitationList"}<br/>
-				{translate key=Add} <input type="text" id="inviteeAutocomplete" class="input" style="width:250px;"/>
+<!--				{translate key=Add} <input type="text" id="inviteeAutocomplete" class="input" style="width:250px;"/>
 				or
 				<button id="promptForInvitees" type="button" class="button" style="display:inline">
 					{html_image src="user-plus.png"}
 				{translate key='AllUsers'}
-				</button>
+				</button> -->
 			</label>
 
 			<div id="inviteeList">
+				<p><b>Видеооператор, принявший комплект оборудования, перечисленный в данном перечне, несет ответственность за его сохранность и работоспособность в соответствии с п7.4. договора на выполнение работ и услуг.</p>
+				<p>В случае выявления дефектов, либо неработоспособных элементов из данного перечня сотрудником, принимающим данное оборудование после проведения съемки, к ответственному лицу могут быть приняты санкции в соответствии с п 7.3. договора на выполнение работ и услуг.</b></p>
 				<ul/>
 			</div>
 			<div id="inviteeDialog" title="{translate key=InviteOthers}" class="dialog"></div>
-		</li> -->
+		</li>
 	</ul>
 </div>

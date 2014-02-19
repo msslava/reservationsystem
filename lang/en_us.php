@@ -223,7 +223,7 @@ class en_us extends Language
 		$strings['ResourceList'] = 'Следующее оборудование будет зарезервировано:';
 		$strings['Accessories'] = 'Аксессуары:';
 		$strings['ParticipantList'] = 'Список участников';
-		$strings['InvitationList'] = 'Приглашения';
+		$strings['InvitationList'] = 'Соглашения сторон: ';
 		$strings['AccessoryName'] = 'Название аксессуара';
 		$strings['QuantityAvailable'] = 'Доступное колличество';
 		$strings['Resources'] = 'Оборудование';
@@ -318,8 +318,8 @@ class en_us extends Language
 		$strings['Approving'] = 'Утверждение';
 		$strings['MoveToSchedule'] = 'Переместить в расписание';
 		$strings['DeleteResourceWarning'] = 'Удаление этого оборудования удалит все связанные данные, в том числе ';
-		$strings['DeleteResourceWarningReservations'] = 'all past, current and future reservations associated with it';
-		$strings['DeleteResourceWarningPermissions'] = 'all permission assignments';
+		$strings['DeleteResourceWarningReservations'] = 'все прошедшие, текущие и будущие бронирования, ассоциированные с ним';
+		$strings['DeleteResourceWarningPermissions'] = 'все назначенные разрешения';
 		$strings['DeleteResourceWarningReassign'] = 'Пожалуйста, переназначьте все, что не должно быть удалено, прежде чем приступить';
 		$strings['ScheduleLayout'] = 'Шаблон (все время %s)';
 		$strings['ReservableTimeSlots'] = 'Временные отрезки для бронирования';
@@ -381,8 +381,8 @@ class en_us extends Language
 		$strings['SortOrder'] = 'Сортировка';
 		$strings['Title'] = 'Название съемки';
 		$strings['AdditionalAttributes'] = 'Дополнительные параметры';
-		$strings['True'] = 'Истина';
-		$strings['False'] = 'Ложь';
+		$strings['True'] = 'TRUE';
+		$strings['False'] = 'FALSE';
 		$strings['ForgotPasswordEmailSent'] = 'Письмо было отправлено по адресу с инструкцией по смене пароля';
 		$strings['ActivationEmailSent'] = 'Вам были посланы инструкции по активации вашего аккаунта.';
 		$strings['AccountActivationError'] = 'Извините, мы не можем активировать ваш аккаунт.';
@@ -637,7 +637,7 @@ class en_us extends Language
 		// The three letter abbreviation
 		$days['abbr'] = array('Воск', 'Пон', 'Втор', 'Сре', 'Чет', 'Пят', 'Суб');
 		// The two letter abbreviation
-		$days['two'] = array('В', 'По', 'Вт', 'Ср', 'Че', 'Пя', 'Су');
+		$days['two'] = array('Во', 'По', 'Вт', 'Ср', 'Че', 'Пя', 'Су');
 		// The one letter abbreviation
 		$days['letter'] = array('Во', 'По', 'Вт', 'Ср', 'Че', 'Пя', 'Су');
 
