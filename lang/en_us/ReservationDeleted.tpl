@@ -25,6 +25,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	Пользователь: {$UserName}
 	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
 	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
+	Название проекта: {$Title}<br/>
+	Описание: {$Description|nl2br}<br/>
+
 	{if $ResourceNames|count > 1}
 		Оборудование:<br/>
 		{foreach from=$ResourceNames item=resourceName}
@@ -33,8 +36,13 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{else}
 		Оборудование: {$ResourceName}<br/>
 	{/if}
-	Название проекта: {$Title}<br/>
-	Описание: {$Description|nl2br}<br/>
+
+	{if $Accessories|count > 0}
+		<br/>Аксессуары:<br/>
+		{foreach from=$Accessories item=accessory}
+			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
+		{/foreach}
+	{/if}
 	
 	{if count($RepeatDates) gt 0}
 		<br/>
@@ -46,13 +54,6 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{formatdate date=$date}<br/>
 	{/foreach}
 
-	{if $Accessories|count > 0}
-		<br/>Аксессуары:<br/>
-		{foreach from=$Accessories item=accessory}
-			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
-		{/foreach}
-	{/if}
-
-	<a href="{$ScriptUrl}">Войти в СИСТЕМУ</a>
+	<a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
 	
 {include file='..\..\tpl\Email\emailfooter.tpl'}

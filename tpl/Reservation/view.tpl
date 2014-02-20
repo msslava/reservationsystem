@@ -128,14 +128,14 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 						{/foreach}
 					</li>
 
-					<li>
+<!--					<li>
 						<label>{translate key='InvitationList'}</label>
 						{foreach from=$Invitees item=invitee}
 							<br/>{$invitee->FullName}
 						{foreachelse}
 							<span class="no-data">{translate key='None'}</span>
 						{/foreach}
-					</li>
+					</li> -->
 				{/if}
 				<li>
 					{if $IAmParticipating}
@@ -196,10 +196,10 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				<img src="img/slash.png"/>
 				{translate key='Close'}
 			</button>
-					<button type="button" class="button">
+<!--					<button type="button" class="button">
 				<img src="img/printer.png" />
 				{translate key='Print'}
-			</button>
+			</button> -->
 		</div>
 
 		{if $ShowReservationDetails}

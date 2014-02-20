@@ -29,6 +29,6 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <br/>
 <a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть это бронирование</a> |
 <a href="{$ScriptUrl}/{$ICalUrl}">Добавить в календарь</a> |
-<a href="{$ScriptUrl}">Войти в СИСТЕМУ</a>
+<a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
 
 {include file='..\..\tpl\Email\emailfooter.tpl'}
