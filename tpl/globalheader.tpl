@@ -75,8 +75,8 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <body>
 <div id="wrapper">
 	<div id="doc">
-		<div id="logo"><object type="application/x-shockwave-flash" height="128" width="128" data="http://192.168.3.52/reservationsystem/Web/flash/calendarb.swf">
- <param name="movie" value="http://192.168.3.52/reservationsystem/Web/flash/calendarb.swf" />
+		<div id="logo"><object type="application/x-shockwave-flash" height="128" width="128" data="http://sklad.eurokino.tv/Web/flash/calendarb.swf">
+ <param name="movie" value="http://sklad.eurokino.tv/Web/flash/calendarb.swf" />
  <param name="wmode" value="transparent" />
  </object></a></div>
 		<div id="header">
