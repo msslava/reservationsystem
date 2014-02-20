@@ -380,7 +380,7 @@ class en_us extends Language
 		$strings['CategoryGroup'] = 'Группа';
 		$strings['SortOrder'] = 'Сортировка';
 		$strings['Title'] = 'Название съемки';
-		$strings['AdditionalAttributes'] = 'Дополнительные параметры';
+		$strings['AdditionalAttributes'] = 'Вам может понадобиться:';
 		$strings['True'] = 'TRUE';
 		$strings['False'] = 'FALSE';
 		$strings['ForgotPasswordEmailSent'] = 'Письмо было отправлено по адресу с инструкцией по смене пароля';
