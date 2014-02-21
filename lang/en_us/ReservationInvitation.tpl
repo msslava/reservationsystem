@@ -35,7 +35,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	Description: {$Description|nl2br}<br/>
 	{if count($RepeatDates) gt 0}
 		<br/>
-		The reservation occurs on the following dates:
+		Бронирование запланировано на следующие даты:
 		<br/>
 	{/if}
 	{foreach from=$RepeatDates item=date name=dates}

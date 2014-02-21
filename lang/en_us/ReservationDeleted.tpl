@@ -21,7 +21,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <p style="padding-left: 50px;">	Детали бронирования:
 	<br/>
 	<br/>
-	Пользователь: {$UserName}
+	Пользователь: {$UserName}<br/>
 	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
 	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
 	Название проекта: {$Title}<br/>
@@ -48,7 +48,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	{foreach from=$RepeatDates item=date name=dates}
 		{formatdate date=$date}<br/>
 	{/foreach}
-
+	<br/>
 	<a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
 	<br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}

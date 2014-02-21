@@ -21,7 +21,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <p style="padding-left: 50px;">	Детали бронирования: 
 	<br/>
 	<br/>
-	Пользователь: {$UserName}
+	Пользователь: {$UserName}<br/>
 	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
 	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
 	Название проекта: {$Title}<br/>
@@ -42,7 +42,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	{/if}
 	{if count($RepeatDates) gt 0}
 		<br/>
-		The reservation occurs on the following dates:
+		Бронирование запланировано на следующие даты:
 		<br/>
 	{/if}
 	{foreach from=$RepeatDates item=date name=dates}
