@@ -425,7 +425,7 @@ class en_us extends Language
 		$strings['ConfigurationUpdated'] = 'Конфигурационный файл был обновлен';
 		$strings['ConfigurationUiNotEnabled'] = 'Эта страница недоступна, потому что $conf[\'settings\'][\'pages\'][\'enable.configuration\'] установлен в false или отсутствует.';
 		$strings['ConfigurationFileNotWritable'] = 'Файл конфигурации недоступен для записи. Пожалуйста, проверьте права на файл и повторите снова.';
-		$strings['ConfigurationUpdateHelp'] = 'Обратитесь к разделу КОНФИГУРАЦИЯ <a target=_blank href=http://localhost/reservationsystem/Web/help.php?ht=admin>Help File</a> для изучения документации по этим вопросам.';
+		$strings['ConfigurationUpdateHelp'] = 'Обратитесь к разделу КОНФИГУРАЦИЯ <a target=_blank href=http://sklad.eurokino.tv/Web/help.php?ht=admin>Help File</a> для изучения документации по этим вопросам.';
 		$strings['GeneralConfigSettings'] = 'Настройки';
 		$strings['UseSameLayoutForAllDays'] = 'Использовать этот шаблон для всех дней';
 		$strings['LayoutVariesByDay'] = 'Шаблон варьируется, в зависимости от дня';
