@@ -17,9 +17,9 @@ You should have received a copy of the GNU General Public License
 along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
-	
-Your report from phpScheduleIt is attached.<br/>
-
-<a href="{$ScriptUrl}">Log in to phpScheduleIt</a>
-	
+<br/>	
+<p style="padding-left: 50px;">Ваш отчет из Системы Планирования во вложении.<br/>
+<br/>
+<a href="{$ScriptUrl}">Вход в Систему Планирования</a></p>
+<br/>	
 {include file='..\..\tpl\Email\emailfooter.tpl'}

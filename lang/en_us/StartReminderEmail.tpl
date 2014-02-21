@@ -17,8 +17,9 @@ You should have received a copy of the GNU General Public License
 along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
-Ваше бронирование скоро начнется.<br/>
-Детали бронирования:
+<br/>
+<p style="padding-left: 50px;">Ваше бронирование скоро начнется.<br/>
+	Детали бронирования:
 	<br/>
 	<br/>
 	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
@@ -30,5 +31,5 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть это бронирование</a> |
 <a href="{$ScriptUrl}/{$ICalUrl}">Добавить в календарь</a> |
 <a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
-
+<br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}

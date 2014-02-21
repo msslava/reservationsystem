@@ -17,11 +17,10 @@ You should have received a copy of the GNU General Public License
 along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
-	
-	Детали бронирования:
+	<br/>
+<p style="padding-left: 50px;">	Детали бронирования:
 	<br/>
 	<br/>
-	
 	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
 	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
 	Название проекта: {$Title}<br/>
@@ -34,24 +33,20 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{else}
 		Оборудование: {$ResourceName}<br/>
 	{/if}
-
 	{if $Accessories|count > 0}
 		<br/>Аксессуары:<br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}
 	{/if}
-
 	{if count($RepeatDates) gt 0}
 		<br/>
 		The reservation occurs on the following dates:
 		<br/>
 	{/if}
-	
 	{foreach from=$RepeatDates item=date name=dates}
 		{formatdate date=$date}<br/>
 	{/foreach}
-
 	{if $RequiresApproval}
 		<br/>
 		One or more of the resources reserved require approval before usage.  This reservation will be pending until it is approved.
@@ -61,5 +56,5 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	<a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резерв</a> |
 	<a href="{$ScriptUrl}/{$ICalUrl}">Добавить в календарь</a> |
 	<a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
-	
+	<br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}

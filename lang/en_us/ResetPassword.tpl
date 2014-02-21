@@ -17,14 +17,14 @@ You should have received a copy of the GNU General Public License
 along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
-	
-Here is your temporary phpScheduleIt password: {$TemporaryPassword}
+<br/>	
+<p style="padding-left: 50px;">Ваш временный пароль для входа в Систему Планирования: {$TemporaryPassword}
 
 <br/>
 
-Your old password will no longer work.
+Ваш прежний пароль больше не работает.
 <br/>
 
-Please <a href="{$ScriptUrl}">Log in to phpScheduleIt</a> and change your password as soon as possible.
-	
+Пожалуйста, <a href="{$ScriptUrl}">войдите в Систему Планирования</a> и измените Ваш пароль как можно скорее.
+<br/>	
 {include file='..\..\tpl\Email\emailfooter.tpl'}

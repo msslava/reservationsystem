@@ -17,17 +17,15 @@ You should have received a copy of the GNU General Public License
 along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
-	
-	Детали бронирования:
+	<br/>
+<p style="padding-left: 50px;">	Детали бронирования:
 	<br/>
 	<br/>
-
 	Пользователь: {$UserName}
 	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
 	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
 	Название проекта: {$Title}<br/>
 	Описание: {$Description|nl2br}<br/>
-
 	{if $ResourceNames|count > 1}
 		Оборудование:<br/>
 		{foreach from=$ResourceNames item=resourceName}
@@ -36,24 +34,21 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{else}
 		Оборудование: {$ResourceName}<br/>
 	{/if}
-
 	{if $Accessories|count > 0}
 		<br/>Аксессуары:<br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}
 	{/if}
-	
 	{if count($RepeatDates) gt 0}
 		<br/>
 		Следующие даты были удалены:
 		<br/>
 	{/if}
-	
 	{foreach from=$RepeatDates item=date name=dates}
 		{formatdate date=$date}<br/>
 	{/foreach}
 
 	<a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
-	
+	<br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}

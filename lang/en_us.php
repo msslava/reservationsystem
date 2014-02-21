@@ -400,7 +400,7 @@ class en_us extends Language
 		$strings['ReportSaved'] = 'Отчет сохранен!';
 		$strings['EmailReport'] = 'Email Отчет';
 		$strings['ReportSent'] = 'Отчет отправлен!';
-		$strings['RunReport'] = 'Run Report';
+		$strings['RunReport'] = 'Показать отчет';
 		$strings['NoSavedReports'] = 'Вы не имеете сохраненных отчетов.';
 		$strings['CurrentWeek'] = 'Текущая неделя';
 		$strings['CurrentMonth'] = 'Текущий месяц';
@@ -610,7 +610,7 @@ class en_us extends Language
 		$strings['InviteeAddedSubject'] = 'Приглашение к бронированию';
 		$strings['ResetPassword'] = 'Требуется сброс пароля';
 		$strings['ActivateYourAccount'] = 'Активация пользователя';
-		$strings['ReportSubject'] = 'Your Requested Report (%s)';
+		$strings['ReportSubject'] = 'Ваш запрос обработан (%s)';
 		$strings['ReservationStartingSoonSubject'] = 'Резерв для %s скоро начнется';
 		$strings['ReservationEndingSoonSubject'] = 'Резерв для %s скоро закончится';
 		// End Email Subjects
