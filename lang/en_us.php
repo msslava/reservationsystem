@@ -504,7 +504,7 @@ class en_us extends Language
 		$strings['MaxNoticeError'] = 'Это резервирование не может быть сделано так рано.  Вы можете сделать этот резерв не ранее %s.';
 		$strings['MinDurationError'] = 'Это резервирование должно длиться не менее %s.';
 		$strings['MaxDurationError'] = 'Это резервирование не может длиться более %s.';
-		$strings['ConflictingAccessoryDates'] = 'There are not enough of the following accessories:';
+		$strings['ConflictingAccessoryDates'] = 'Следующие аксессуары недоступны в нужном количестве:';
 		$strings['NoResourcePermission'] = 'Вы не имеете разрешений на доступ к одному или более из запрашиваемого оборудования';
 		$strings['ConflictingReservationDates'] = 'Конфликт бронирования с другой датой:';
 		$strings['StartDateBeforeEndDateRule'] = 'Дата и время начала должны предшествовать дате и времени окончания';

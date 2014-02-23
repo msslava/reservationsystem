@@ -21,22 +21,28 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <p style="padding-left: 50px;">	Детали бронирования:
 	<br/>
 	<br/>
-	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
-	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
-	Название проекта: {$Title}<br/>
-	Описание: {$Description|nl2br}<br/>
+	<b><u>Начало</u></b>: {formatdate date=$StartDate key=reservation_email}<br/>
+	<b><u>Окончание</u></b>: {formatdate date=$EndDate key=reservation_email}<br/>
+	<b><u>Название проекта</u></b>: {$Title}<br/>
+	<b><u>Описание</u></b>: {$Description|nl2br}<br/>
 	{if $ResourceNames|count > 1}
-		Оборудование:<br/>
+		<b><u>Оборудование</u></b>:<br/>
 		{foreach from=$ResourceNames item=resourceName}
 			{$resourceName}<br/>
 		{/foreach}
 		{else}
-		Оборудование: {$ResourceName}<br/>
+		<b><u>Оборудование</u></b>: {$ResourceName}<br/>
 	{/if}
 	{if $Accessories|count > 0}
-		<br/>Аксессуары:<br/>
+		<br/><b><u>Аксессуары</u></b>:<br/>
 		{foreach from=$Accessories item=accessory}
-			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
+			({$accessory->QuantityReserved}шт.) {$accessory->Name}<br/>
+		{/foreach}
+	{/if}
+	{if $customAttributes|count > 0}
+		<br/>
+		{foreach from=$customAttributes item=customAttribute}
+			<div>{control type="AttributeControl" attribute=$attribute readonly=true}</div>
 		{/foreach}
 	{/if}
 	{if count($RepeatDates) gt 0}

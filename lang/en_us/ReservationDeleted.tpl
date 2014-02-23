@@ -21,25 +21,25 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <p style="padding-left: 50px;">	Детали бронирования:
 	<br/>
 	<br/>
-	Пользователь: {$UserName}<br/>
-	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
-	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
-	Название проекта: {$Title}<br/>
-	Описание: {$Description|nl2br}<br/>
+	<b><u>Пользователь</u></b>: {$UserName}<br/>
+	<b><u>Начало</u></b>: {formatdate date=$StartDate key=reservation_email}<br/>
+	<b><u>Окончание</u></b>: {formatdate date=$EndDate key=reservation_email}<br/>
+	<b><u>Название проекта</b></u>: {$Title}<br/>
+	<b><u>Описание</b></u>: {$Description|nl2br}<br/>
 	{if $ResourceNames|count > 1}
-		Оборудование:<br/>
+		<b><u>Оборудование</b></u>:<br/>
 		{foreach from=$ResourceNames item=resourceName}
 			{$resourceName}<br/>
 		{/foreach}
 		{else}
-		Оборудование: {$ResourceName}<br/>
+		<b><u>Оборудование</b></u>: {$ResourceName}<br/>
 	{/if}
-	{if $Accessories|count > 0}
+<!--	{if $Accessories|count > 0}
 		<br/>Аксессуары:<br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}
-	{/if}
+	{/if} -->
 	{if count($RepeatDates) gt 0}
 		<br/>
 		Следующие даты были удалены:

@@ -21,21 +21,21 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <p style="padding-left: 50px;">	Детали бронирования: 
 	<br/>
 	<br/>
-	Пользователь: {$UserName}<br/>
-	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
-	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
-	Название проекта: {$Title}<br/>
-	Описание: {$Description}<br/>
+	<b><u>Пользователь</b></u>: {$UserName}<br/>
+	<b><u>Начало</b></u>: {formatdate date=$StartDate key=reservation_email}<br/>
+	<b><u>Окончание</b></u>: {formatdate date=$EndDate key=reservation_email}<br/>
+	<b><u>Название проекта</b></u>: {$Title}<br/>
+	<b><u>Описание</b></u>: {$Description}<br/>
 	{if $ResourceNames|count > 1}
-		Оборудование:<br/>
+		<b><u>Оборудование</b></u>:<br/>
 		{foreach from=$ResourceNames item=resourceName}
 			{$resourceName}<br/>
 		{/foreach}
 		{else}
-		Оборудование: {$ResourceName}<br/>
+		<b><u>Оборудование</b></u>: {$ResourceName}<br/>
 	{/if}
 	{if $Accessories|count > 0}
-		<br/>Аксессуары:<br/>
+		<br/><b><u>Аксессуары</b></u>:<br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}

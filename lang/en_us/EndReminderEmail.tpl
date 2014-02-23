@@ -22,14 +22,14 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	Детали бронирования:
 	<br/>
 	<br/>
-	Start: {formatdate date=$StartDate key=reservation_email}<br/>
-	End: {formatdate date=$EndDate key=reservation_email}<br/>
-	Resource: {$ResourceName}<br/>
-	Title: {$Title}<br/>
-	Description: {$Description|nl2br}<br/>
+	<b><u>Начало</b></u>: {formatdate date=$StartDate key=reservation_email}<br/>
+	<b><u>Окончание</b></u>: {formatdate date=$EndDate key=reservation_email}<br/>
+	<b><u>Оборудование</b></u>: {$ResourceName}<br/>
+	<b><u>Название</b></u>: {$Title}<br/>
+	<b><u>Описание</b></u>: {$Description|nl2br}<br/>
 <br/>
-<a href="{$ScriptUrl}/{$ReservationUrl}">View this reservation</a> |
-<a href="{$ScriptUrl}/{$ICalUrl}">Add to Calendar</a> |
-<a href="{$ScriptUrl}">Log in to phpScheduleIt</a>
+<a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резевр</a> |
+<a href="{$ScriptUrl}/{$ICalUrl}">Добавить в календарь</a> |
+<a href="{$ScriptUrl}">Войти в Систему Планирования</a>
 <br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}
