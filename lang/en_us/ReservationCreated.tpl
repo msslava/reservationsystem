@@ -25,6 +25,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	<b><u>Окончание</u></b>: {formatdate date=$EndDate key=reservation_email}<br/>
 	<b><u>Название проекта</u></b>: {$Title}<br/>
 	<b><u>Описание</u></b>: {$Description|nl2br}<br/>
+	<br/>
 	{if $ResourceNames|count > 1}
 		<b><u>Оборудование</u></b>:<br/>
 		{foreach from=$ResourceNames item=resourceName}
@@ -39,12 +40,22 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			({$accessory->QuantityReserved}шт.) {$accessory->Name}<br/>
 		{/foreach}
 	{/if}
-	{if $customAttributes|count > 0}
-		<br/>
-		{foreach from=$customAttributes item=customAttribute}
-			<div>{control type="AttributeControl" attribute=$attribute readonly=true}</div>
-		{/foreach}
-	{/if}
+	{*Custom Attribute output with manually inserted labels*}
+	<br/><b><u>Дополнительно</u></b>:<br/>
+	{foreach from=$CustomAttributes key=k item=customAtt name=row}
+		{if $smarty.foreach.row.index == 0}
+			Аккумуляторы для Sony FS700: {$customAtt ->Value}<br/>
+		{elseif $smarty.foreach.row.index == 1}
+			Аккумуляторы для Canon D60: {$customAtt ->Value}<br/>
+		{elseif $smarty.foreach.row.index == 2}
+			Аккумуляторы для GoPro: {$customAtt ->Value}<br/>
+		{elseif $smarty.foreach.row.index == 3}
+			Аккумуляторы AA: {$customAtt ->Value}<br/>	
+		{elseif $smarty.foreach.row.index == 4}
+			Дополнительная ячейка: {$customAtt ->Value}<br/>
+		{/if}			
+	{/foreach}
+
 	{if count($RepeatDates) gt 0}
 		<br/>
 		Бронирование запланировано на следующие даты:

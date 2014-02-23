@@ -104,6 +104,7 @@ class ReservationCreatedEmailAdmin extends EmailMessage
 		$this->Set('ResourceName', $this->resource->GetName());
 		$this->Set('Title', $this->reservationSeries->Title());
 		$this->Set('Description', $this->reservationSeries->Description());
+		$this->Set('CustomAttributes', $this->reservationSeries->AttributeValues());
 		
 		$repeatDates = array();
 		foreach ($this->reservationSeries->Instances() as $repeated)

@@ -26,6 +26,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	<b><u>Окончание</u></b>: {formatdate date=$EndDate key=reservation_email}<br/>
 	<b><u>Название проекта</b></u>: {$Title}<br/>
 	<b><u>Описание</b></u>: {$Description|nl2br}<br/>
+<br/>	
 	{if $ResourceNames|count > 1}
 		<b><u>Оборудование</b></u>:<br/>
 		{foreach from=$ResourceNames item=resourceName}

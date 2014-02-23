@@ -85,6 +85,7 @@ abstract class ReservationEmailMessage extends EmailMessage
         $this->Set('ResourceName', $this->reservationSeries->Resource()->GetName());
         $this->Set('Title', $this->reservationSeries->Title());
         $this->Set('Description', $this->reservationSeries->Description());
+        $this->Set('CustomAttributes', $this->reservationSeries->AttributeValues());
 
         $repeatDates = array();
         if ($this->reservationSeries->IsRecurring())
