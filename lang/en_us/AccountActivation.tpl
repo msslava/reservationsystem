@@ -19,6 +19,8 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 {include file='..\..\tpl\Email\emailheader.tpl'}
 
 {$FirstName},<br/>
-<p style="padding-left: 30px;">Спасибо за регистрацию в СИСТЕМЕ ПЛАНИРОВАНИЯ СЪЕМОК. Пожалуйста, <a href="{$ActivationUrl}">активируйте свою учетную запись!</a>.</p>
+<p style="padding-left: 30px;">Спасибо за регистрацию в Системе Планирования. Пожалуйста, <a href="{$ActivationUrl}">активируйте свою учетную запись!</a>.</p>
 	
-{include file='..\..\tpl\Email\emailfooter.tpl'}
+{*
+{include file='..\..\tpl\Email\emailfooter.t
+*}

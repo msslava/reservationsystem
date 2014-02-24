@@ -69,6 +69,6 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		One or more of the resources reserved require approval before usage.  Please ensure that this reservation request is approved or rejected.
 	{/if}
 		<br/>
-	<a href="{$ScriptUrl}/{$ReservationUrl}">Смотреть этот резерв</a> | <a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
+	<a href="{$ScriptUrl}/{$ReservationUrl}">Смотреть этот резерв</a> | <a href="{$ScriptUrl}">Войти в Систему Планирования</a>
 		<br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}

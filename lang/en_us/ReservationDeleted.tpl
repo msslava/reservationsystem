@@ -50,6 +50,6 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{formatdate date=$date}<br/>
 	{/foreach}
 	<br/>
-	<a href="{$ScriptUrl}">Войти в СИСТЕМУ ПЛАНИРОВАНИЯ</a>
+	<a href="{$ScriptUrl}">Войти в Систему Планирования</a>
 	<br/></p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}
