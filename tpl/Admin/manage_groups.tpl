@@ -136,7 +136,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	<div>
 		<div id="addGroupResults" class="error" style="display:none;"></div>
 		<form id="addGroupForm" method="post">
-			Name<br/> <input type="text" class="textbox required" {formname key=GROUP_NAME} />
+			Название<br/> <input type="text" class="textbox required" {formname key=GROUP_NAME} />
 			<button type="button" class="button save">{html_image src="plus-button.png"} {translate key=AddGroup}</button>
 		</form>
 	</div>

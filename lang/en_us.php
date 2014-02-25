@@ -542,13 +542,13 @@ class en_us extends Language
 		$strings['ServerSettings'] = 'Настройки сервера';
 		$strings['Dashboard'] = 'Информация';
 		$strings['Help'] = 'Помощь';
-		$strings['Administration'] = 'Administration';
+		$strings['Administration'] = 'Администрирование';
 		$strings['About'] = 'About';
 		$strings['Bookings'] = 'Резервирование';
 		$strings['Schedule'] = 'График';
 		$strings['Reservations'] = 'Брони';
-		$strings['Account'] = 'Account';
-		$strings['EditProfile'] = 'Edit My Profile';
+		$strings['Account'] = 'Профиль';
+		$strings['EditProfile'] = 'Редактировать профиль';
 		$strings['FindAnOpening'] = 'Find An Opening';
 		$strings['OpenInvitations'] = 'Open Invitations';
 		$strings['MyCalendar'] = 'Мой календарь';
@@ -564,7 +564,7 @@ class en_us extends Language
 		$strings['ManageAnnouncements'] = 'Объявления';
 		$strings['Responsibilities'] = 'Обязанности';
 		$strings['GroupReservations'] = 'Резервирования группы';
-		$strings['ResourceReservations'] = 'Resource Reservations';
+		$strings['ResourceReservations'] = 'Оборудование резервирований';
 		$strings['Customization'] = 'Индивидуальные настройки';
 		$strings['Attributes'] = 'Атрибуты';
 		$strings['AccountActivation'] = 'Активация аккаунта';
