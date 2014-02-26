@@ -51,8 +51,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			Аккумуляторы для GoPro: {$customAtt ->Value}<br/>
 		{elseif $smarty.foreach.row.index == 3}
 			Аккумуляторы AA: {$customAtt ->Value}<br/>	
+			<br/>
 		{elseif $smarty.foreach.row.index == 4}
-			Дополнительная ячейка: {$customAtt ->Value}<br/>
+			<b><u>Предварительное резервирование</b></u>: {$customAtt ->Value}<br/>
 		{/if}			
 	{/foreach}
 

@@ -64,7 +64,7 @@ $(document).ready(function() {
 					monthNamesShort: {js_array array=$MonthNamesShort},
 					timeFormat: '{$TimeFormat}',
 					dayMonth: '{$DateFormat}',
-					firstDay: 0,
+					firstDay: 1,
 					reservationUrl: '{Pages::RESERVATION}?sid={$ScheduleId}&rid={$ResourceId}',
 					reservable: true
 				};

@@ -95,8 +95,8 @@ class en_us extends Language
 		$strings['Registration'] = 'Регистрация';
 		$strings['NoAnnouncements'] = 'Объявлений нет';
 		$strings['Announcements'] = 'Объявления';
-		$strings['NoUpcomingReservations'] = 'У Вас нет предстоящих событий';
-		$strings['UpcomingReservations'] = 'Следующие резервы';
+		$strings['NoUpcomingReservations'] = 'У Вас нет будущих резервирований';
+		$strings['UpcomingReservations'] = 'Будущие резервирования';
 		$strings['ShowHide'] = 'Показать/Скрыть';
 		$strings['Error'] = 'Ошибка';
 		$strings['ReturnToPreviousPage'] = 'Вернуться на предыдущую страницу';
@@ -225,7 +225,7 @@ class en_us extends Language
 		$strings['ParticipantList'] = 'Список участников';
 		$strings['InvitationList'] = 'Соглашения сторон: ';
 		$strings['AccessoryName'] = 'Название аксессуара';
-		$strings['QuantityAvailable'] = 'Доступное колличество';
+		$strings['QuantityAvailable'] = 'Всего';
 		$strings['Resources'] = 'Оборудование';
 		$strings['Participants'] = 'Участники';
 		$strings['User'] = 'Пользователь';
