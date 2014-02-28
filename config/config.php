@@ -26,7 +26,7 @@ $conf['settings']['disable.password.reset'] = 'false';
 $conf['settings']['home.url'] = 'http://sklad.eurokino.tv';
 $conf['settings']['logout.url'] = '';
 $conf['settings']['ics']['require.login'] = 'true';
-$conf['settings']['ics']['subscription.key'] = 'password3';
+$conf['settings']['ics']['subscription.key'] = 'qwerty';
 $conf['settings']['ics']['import'] = 'false';
 $conf['settings']['ics']['import.key'] = '';
 $conf['settings']['privacy']['view.schedules'] = 'true';
@@ -76,4 +76,3 @@ $conf['settings']['api']['enabled'] = 'true';
 $conf['settings']['recaptcha']['enabled'] = 'true';
 $conf['settings']['recaptcha']['public.key'] = '6LebyO4SAAAAAHPpzq2tO8pqmG4b5hZMutjMM2Rl';
 $conf['settings']['recaptcha']['private.key'] = '6LebyO4SAAAAAPea0VxnU7ol1tfaRh-cIE9xW1Y1';
-?>

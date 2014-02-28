@@ -99,7 +99,7 @@ class CalendarSubscriptionPage extends Page implements ICalendarSubscriptionPage
 	{
 		$this->presenter->PageLoad();
 
-		header("Content-Type: text/Calendar");
+		header("Content-Type: text/Calendar; charset=utf-8");
 		header("Content-Disposition: inline; filename=calendar.ics");
 
 		$config = Configuration::Instance();
