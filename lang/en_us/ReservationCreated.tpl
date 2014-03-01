@@ -41,7 +41,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{/foreach}
 	{/if}
 	{*Custom Attribute output with manually inserted labels*}
-	<br/><b><u>Дополнительно</u></b>:<br/>
+	<br/><b><u>Аккумуляторы</u></b>:<br/>
 	{foreach from=$CustomAttributes key=k item=customAtt name=row}
 		{if $smarty.foreach.row.index == 0}
 			Аккумуляторы для Sony FS700: {$customAtt ->Value}<br/>

@@ -54,7 +54,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{translate key=NoLocationLabel}
 	{/if}
     </div>
-    <div class="attributes">
+<!--    <div class="attributes">
         <ul>
             <li>
 			{if $minimumDuration neq ''}
@@ -113,6 +113,6 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			{/foreach}
 		{/if}
         </ul>
-    </div>
+    </div> -->
     <div style="clear"></div>
 </div>

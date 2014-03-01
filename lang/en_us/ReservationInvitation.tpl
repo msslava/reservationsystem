@@ -21,18 +21,18 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <p style="padding-left: 50px;">	Детали бронирования:
 	<br/>
 	<br/>
-	Starting: {formatdate date=$StartDate key=reservation_email}<br/>
-	Ending: {formatdate date=$EndDate key=reservation_email}<br/>
+	Начало: {formatdate date=$StartDate key=reservation_email}<br/>
+	Окончание: {formatdate date=$EndDate key=reservation_email}<br/>
 	{if $ResourceNames|count > 1}
-		Resources:<br/>
+		Оборудование:<br/>
 		{foreach from=$ResourceNames item=resourceName}
 			{$resourceName}<br/>
 		{/foreach}
 		{else}
-		Resource: {$ResourceName}<br/>
+		Оборудование: {$ResourceName}<br/>
 	{/if}
-	Title: {$Title}<br/>
-	Description: {$Description|nl2br}<br/>
+	Название проекта: {$Title}<br/>
+	Описание: {$Description|nl2br}<br/>
 	{if count($RepeatDates) gt 0}
 		<br/>
 		Бронирование запланировано на следующие даты:
@@ -42,7 +42,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		{formatdate date=$date}<br/>
 	{/foreach}
 		{if $Accessories|count > 0}
-		<br/>Accessories:<br/>
+		<br/>Аксессуары:<br/>
 		{foreach from=$Accessories item=accessory}
 			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
 		{/foreach}
