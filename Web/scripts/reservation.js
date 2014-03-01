@@ -306,7 +306,7 @@ function Reservation(opts) {
 	var WireUpSaveDialog = function() {
 		$('#dialogSave').dialog({
 			autoOpen: false, modal: true, draggable: false, resizable: false, closeOnEscape: false,
-			minHeight: 400, minWidth: 700, width: 700,
+			 minWidth: 700, width: 700,
 			open: function(event, ui) {
 				$(this).parents(".ui-dialog:first").find(".ui-dialog-titlebar").hide();
 			}

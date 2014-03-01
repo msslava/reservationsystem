@@ -108,6 +108,7 @@
 #dialogSave div {
 	font-size: 16pt;
 	text-align: center;
+	padding-top: 8px;
 }
 
 #dialogSave input, #dialogSave button {
