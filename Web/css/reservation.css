@@ -72,10 +72,12 @@
 }
 
 #inviteeList {
-	height: 160px;
+	height: auto;
 	width: 97%;
 	border: solid 1px #ededed;
+	border-color: red;
 	padding-left: 15px;
+	padding-top: 8px;
 	font-size: 08pt;
 	color: red;
 }
