@@ -613,7 +613,8 @@ div.notification-status {
 .customAttributes li {
 	float: left;
 	position: relative;
-	padding-right: 10px;
+	padding-right: 30px;
+	padding-bottom: 10px;
 	vertical-align: top;
 }
 
