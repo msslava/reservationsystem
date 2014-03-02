@@ -18,7 +18,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
 	<br/>
-<p style="padding-left: 50px;">	Детали бронирования: 
+<p style="padding-left: 50px;">	ДЕТАЛИ БРОНИРОВАНИЯ: 
 	<br/>
 	<br/>
 	<b><u>Пользователь</b></u>: {$UserName}<br/>
@@ -38,7 +38,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	{if $Accessories|count > 0}
 		<br/><b><u>Аксессуары</b></u>:<br/>
 		{foreach from=$Accessories item=accessory}
-			({$accessory->QuantityReserved}) {$accessory->Name}<br/>
+		 {$accessory->Name} - <font size="3" color="green"><i>{$accessory->QuantityReserved} шт.</i></font><br/>
 		{/foreach}
 	{/if}
 	{*Custom Attribute output with manually inserted labels*}
@@ -67,7 +67,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	{/foreach}
 	{if $RequiresApproval}
 		<br/>
-		One or more of the resources reserved require approval before usage.  Please ensure that this reservation request is approved or rejected.
+		Некоторое зарезервированное оборудование требует утверждения.  Пожалуйста, убедитесь, что этот запрос на резервирование будет утвержден или отклонен.
 	{/if}
 		<br/>
 	<a href="{$ScriptUrl}/{$ReservationUrl}">Смотреть этот резерв</a> | <a href="{$ScriptUrl}">Войти в Систему Планирования</a>

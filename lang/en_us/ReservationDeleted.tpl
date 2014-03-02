@@ -18,7 +18,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 {include file='..\..\tpl\Email\emailheader.tpl'}
 	<br/>
-<p style="padding-left: 50px;">	Детали бронирования:
+<p style="padding-left: 50px;">	ДЕТАЛИ БРОНИРОВАНИЯ:
 	<br/>
 	<br/>
 	<b><u>Пользователь</u></b>: {$UserName}<br/>
