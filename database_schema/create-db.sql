@@ -1,5 +1,0 @@
-DROP DATABASE IF EXISTS sklad;
-
-CREATE DATABASE sklad;
-
-USE sklad;
