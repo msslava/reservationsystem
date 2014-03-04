@@ -33,7 +33,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
 				</li>
 				<li>
-					<label>{translate key='Resources'}</label> {$ResourceName}
+					<label>{translate key='Resources'}:</label> {$ResourceName}
 					{foreach from=$AvailableResources item=resource}
 						{if is_array($AdditionalResourceIds) && in_array($resource->Id, $AdditionalResourceIds)}
 							,{$resource->Name}
@@ -41,9 +41,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 					{/foreach}
 				</li>
 				<li>
-					<label>{translate key='Accessories'}</label>
+					<label>{translate key='Accessories'}</label><br />
 					{foreach from=$Accessories item=accessory name=accessoryLoop}
-						{$accessory->QuantityReserved} шт. -
+						<font size="3" color="green"><i>{$accessory->QuantityReserved} шт. </i></font>-
 						{if $smarty.foreach.accessoryLoop.last}
 							{$accessory->Name}
 						{else}
@@ -52,7 +52,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 					{/foreach}
 				</li>
 				<li class="section">
-					<label>{translate key='BeginDate'}</label> {formatdate date=$StartDate}
+					<label>{translate key='BeginDate'}:</label> {formatdate date=$StartDate}
 					<input type="hidden" id="formattedBeginDate" value="{formatdate date=$StartDate key=system}"/>
 					{foreach from=$StartPeriods item=period}
 						{if $period eq $SelectedStart}
@@ -62,7 +62,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 					{/foreach}
 				</li>
 				<li>
-					<label>{translate key='EndDate'}</label> {formatdate date=$EndDate}
+					<label>{translate key='EndDate'}:</label> {formatdate date=$EndDate}
 					<input type="hidden" id="formattedEndDate" value="{formatdate date=$EndDate key=system}" />
 					{foreach from=$EndPeriods item=period}
 						{if $period eq $SelectedEnd}
@@ -80,7 +80,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 						</div>
 					</li>
 				<li>
-					<label>{translate key='RepeatPrompt'}</label> {translate key=$RepeatOptions[$RepeatType]['key']}
+					<label>{translate key='RepeatPrompt'}:</label> {translate key=$RepeatOptions[$RepeatType]['key']}
 				{if $IsRecurring}
 					<div class="repeat-details">
 						<label>{translate key='RepeatEveryPrompt'}</label> {$RepeatInterval} {$RepeatOptions[$RepeatType]['everyKey']}
@@ -96,7 +96,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				{if $ShowReservationDetails}
 					</li>
 					<li class="section">
-						<label>{translate key='ReservationTitle'}</label>
+						<label>{translate key='ReservationTitle'}:</label>
 						{if $ReservationTitle neq ''}
 							{$ReservationTitle}
 						{else}
@@ -105,7 +105,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 					</li>
 
 					<li>
-						<label>{translate key='ReservationDescription'}</label>
+						<label>{translate key='ReservationDescription'}:</label>
 						{if $Description neq ''}
 							<br/>{$Description|nl2br}
 						{else}
@@ -120,7 +120,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			<ul class="no-style">
 				{if $ShowUserDetails}
 					<li class="section">
-						<label>{translate key='ParticipantList'}</label>
+						<label>{translate key='ParticipantList'}:</label>
 						{foreach from=$Participants item=participant}
 							<br/>{$participant->FullName}
 						{foreachelse}
@@ -170,7 +170,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				<ul>
 				{foreach from=$Attributes item=attribute}
 					<li class="customAttribute">
-						{control type="AttributeControl" attribute=$attribute readonly=true}
+						<font size="4" color="green"><i>{control type="AttributeControl" attribute=$attribute readonly=true}</i></font>
 					</li>
 				{/foreach}
 				</ul>
