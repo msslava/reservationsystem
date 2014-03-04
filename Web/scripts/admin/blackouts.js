@@ -198,10 +198,10 @@ function BlackoutManagement(opts)
 	function wireUpTimePickers()
 	{
 		$('#addStartTime').timePicker({
-			show24Hours: false
+			show24Hours: true
 		});
 		$('#addEndTime').timePicker({
-			show24Hours: false
+			show24Hours: true
 		});
 	}
 }

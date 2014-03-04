@@ -62,7 +62,7 @@ class QuotaRule implements IReservationValidationRule
 		{
 			if ($quota->ExceedsQuota($reservationSeries, $user, $schedule, $this->reservationViewRepository))
 			{
-				return new ReservationRuleResult(false, 'QuotaExceeded');
+				return new ReservationRuleResult(false, 'Доступ к комплект(у/ам) ограничен Администратором!');
 			}
 		}
 

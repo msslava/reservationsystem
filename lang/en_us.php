@@ -200,7 +200,7 @@ class en_us extends Language
 		$strings['ApplyUpdatesTo'] = 'Применить обновления к';
 		$strings['CancelParticipation'] = 'Отменить участие';
 		$strings['Attending'] = 'Attending';
-		$strings['QuotaConfiguration'] = 'On %s for %s users in %s are limited to %s %s per %s';
+		$strings['QuotaConfiguration'] = 'На %s для %s пользователей в группе %s ограничить до %s %s в %s';
 		$strings['reservations'] = 'брони';
 		$strings['ChangeCalendar'] = 'Изменить календарь';
 		$strings['AddQuota'] = 'Добавить квоту';
@@ -300,9 +300,9 @@ class en_us extends Language
 		$strings['Filter'] = 'Фильтр';
 		$strings['Between'] = 'Интервал';
 		$strings['CreatedBy'] = 'Создатель';
-		$strings['BlackoutCreated'] = 'Blackout Created!';
-		$strings['BlackoutNotCreated'] = 'Blackout could not be created!';
-		$strings['BlackoutConflicts'] = 'There are conflicting blackout times';
+		$strings['BlackoutCreated'] = 'Условие создано!';
+		$strings['BlackoutNotCreated'] = 'Условие не было создано!';
+		$strings['BlackoutConflicts'] = 'Конфликт условий';
 		$strings['ReservationConflicts'] = 'Конфликт времени резервирования';
 		$strings['UsersInGroup'] = 'Пользователи в этой группе';
 		$strings['Browse'] = 'Выбрать';

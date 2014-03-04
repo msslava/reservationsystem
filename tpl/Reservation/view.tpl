@@ -43,11 +43,11 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				<li>
 					<label>{translate key='Accessories'}</label>
 					{foreach from=$Accessories item=accessory name=accessoryLoop}
-						({$accessory->QuantityReserved})
+						{$accessory->QuantityReserved} шт. -
 						{if $smarty.foreach.accessoryLoop.last}
 							{$accessory->Name}
 						{else}
-							{$accessory->Name},
+							{$accessory->Name},<br />
 						{/if}
 					{/foreach}
 				</li>

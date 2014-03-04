@@ -31,13 +31,13 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 					<label for="addStartDate" class="wideLabel">{translate key=BeginDate}</label>
 					<input type="text" id="addStartDate" class="textbox" size="10" value="{formatdate date=$AddStartDate}"/>
 					<input {formname key=BEGIN_DATE} id="formattedAddStartDate" type="hidden" value="{formatdate date=$AddStartDate key=system}"/>
-					<input {formname key=BEGIN_TIME} type="text" id="addStartTime" class="textbox" size="7" value="12:00 AM" />
+					<input {formname key=BEGIN_TIME} type="text" id="addStartTime" class="textbox" size="7" value="00:00" />
 				</li>
 				<li>
 					<label for="addEndDate" class="wideLabel">{translate key=EndDate}</label>
 					<input type="text" id="addEndDate" class="textbox" size="10" value="{formatdate date=$AddEndDate}"/>
 					<input {formname key=END_DATE} type="hidden" id="formattedAddEndDate" value="{formatdate date=$AddEndDate key=system}"/>
-					<input {formname key=END_TIME} type="text" id="addEndTime" class="textbox" size="7"  value="12:00 AM" />
+					<input {formname key=END_TIME} type="text" id="addEndTime" class="textbox" size="7"  value="00:00" />
 				</li>
 				<li>
 					<label for="addResourceId" class="wideLabel">{translate key=Resource}</label>
@@ -70,7 +70,8 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 					<button type="button" class="button save create">
 						{html_image src="tick-circle.png"} {translate key='Create'}
 					</button>
-					<input type="reset" value="Cancel" class="button" style="border: 0;background: transparent;color: blue;cursor:pointer; font-size: 60%" />
+					<button type="button" class="button" onclick="window.location='http://sklad.eurokino.tv/Web/schedule.php'">{html_image src="slash.png"} Отменить
+    				</button>
 				</li>
 			</ul>
 		</form>
