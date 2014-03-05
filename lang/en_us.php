@@ -513,15 +513,15 @@ class en_us extends Language
 		$strings['ValidLayoutRequired'] = 'Временные интервалы должны быть обеспечены для всех 24 часов суток, начиная и заканчивая в 00:00.';
 		$strings['CustomAttributeErrors'] = 'Проблемы с дополнительными атрибутами:';
 		$strings['CustomAttributeRequired'] = '%s обязательное поле';
-		$strings['CustomAttributeInvalid'] = 'The value provided for %s is invalid';
+		$strings['CustomAttributeInvalid'] = 'Значение, предусмотренное для %s является недействительным';
 		$strings['AttachmentLoadingError'] = 'Извините, проблема загрузки требуемого файла.';
 		$strings['InvalidAttachmentExtension'] = 'Вы можете загружать только файлы типа: %s';
-		$strings['InvalidStartSlot'] = 'The start date and time requested is not valid.';
-		$strings['InvalidEndSlot'] = 'The end date and time requested is not valid.';
-		$strings['MaxParticipantsError'] = '%s can only support %s participants.';
+		$strings['InvalidStartSlot'] = 'Дата и время начала резервирования недействительны.';
+		$strings['InvalidEndSlot'] = 'Дата и время окончания резервирования недействительны.';
+		$strings['MaxParticipantsError'] = '%s может использовать только %s участник.';
 		$strings['ReservationCriticalError'] = 'Это была критическая ошибка сохранения Вашего резервирования. Если это повторится, свяжитесь с Администратором Системы Планирования.';
-		$strings['InvalidStartReminderTime'] = 'The start reminder time is not valid.';
-		$strings['InvalidEndReminderTime'] = 'The end reminder time is not valid.';
+		$strings['InvalidStartReminderTime'] = 'Время начала напоминания недействительно.';
+		$strings['InvalidEndReminderTime'] = 'Время окончания напоминания недействительно.';
 		// End Errors
 
 		// Page Titles
