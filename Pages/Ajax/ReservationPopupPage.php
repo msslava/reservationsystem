@@ -179,6 +179,12 @@ class ReservationPopupPage extends Page implements IReservationPopupPage
 		$this->Set('hideDetails', $hideReservationDetails);
 	}
 
+	public function SetAttributes($attributes)
+	{
+		$this->Set('attributes', $attributes);
+	}
+
+
 	/**
 	 * @param bool $hideUserInfo
 	 * @return void
@@ -247,6 +253,7 @@ class ReservationPopupPresenter
 		$this->_page->SetSummary($reservation->Description);
 		$this->_page->SetTitle($reservation->Title);
 		$this->_page->SetAccessories($reservation->Accessories);
+		$this->_page->SetAttributes($reservation->Attributes);
 
 		$this->_page->SetDates($startDate, $endDate);
 	}
