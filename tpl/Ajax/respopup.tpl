@@ -76,9 +76,9 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
             {foreach from=$attributes item=attribute name=row}
 		{if $smarty.foreach.row.index == 3}
 			Аккумуляторы для Sony FS700: {$attribute ->Value}<br/>
-		{elseif $smarty.foreach.row.index == 2}
-			Аккумуляторы для Canon D60: {$attribute ->Value}<br/>
 		{elseif $smarty.foreach.row.index == 1}
+			Аккумуляторы для Canon D60: {$attribute ->Value}<br/>
+		{elseif $smarty.foreach.row.index == 2}
 			Аккумуляторы для GoPro: {$attribute ->Value}<br/>
 		{elseif $smarty.foreach.row.index == 4}
 			Аккумуляторы AA: {$attribute ->Value}<br/>	
