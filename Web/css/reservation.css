@@ -83,7 +83,7 @@
 }
 
 #accessories {
-	max-height: 200px;
+	max-height: auto;
 	overflow: auto;
 }
 

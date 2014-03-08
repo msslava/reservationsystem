@@ -51,7 +51,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
         <li class="inline">
             <div>
                 <div style="float:left;">
-                    <label>{translate key="ResourceList"}</label><br/>
+                    <label><b>{translate key="ResourceList"}</b></label><br/>
 
                     <div id="resourceNames" style="display:inline">
                         <a href="#" class="resourceDetails">{$ResourceName}</a>
@@ -65,9 +65,10 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 				{/if}
                     <div id="additionalResources"></div>
                 </div>
-                <div style="float:right;">
+                <br/>
+                <div style="float:left; width:500px;">
 				{if $AvailableAccessories|count > 0}
-                    <label>{translate key="Accessories"}</label>
+                    <label><b>{translate key="Accessories"}</b></label>
                     <a href="#" id="addAccessoriesPrompt">({translate key='Add'})</a>
 
                     <div id="accessories"></div>
@@ -77,7 +78,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
             <div style="clear:both;height:0;">&nbsp;</div>
         </li>
         <li>
-            <label for="BeginDate" style="width:94px;display:inline-block;">{translate key='BeginDate'}</label>
+            <label for="BeginDate" style="width:104px;display:inline-block;"><b>{translate key='BeginDate'}</b></label>
             <input type="text" id="BeginDate" class="dateinput" value="{formatdate date=$StartDate}"/>
             <input type="hidden" id="formattedBeginDate" {formname key=BEGIN_DATE}
                    value="{formatdate date=$StartDate key=system}"/>
@@ -94,7 +95,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
             </select>
         </li>
         <li>
-            <label for="EndDate" style="width:94px;display:inline-block;">{translate key='EndDate'}</label>
+            <label for="EndDate" style="width:104px;display:inline-block;"><b>{translate key='EndDate'}</b></label>
             <input type="text" id="EndDate" class="dateinput" value="{formatdate date=$EndDate}"/>
             <input type="hidden" id="formattedEndDate" {formname key=END_DATE}
                    value="{formatdate date=$EndDate key=system}"/>
@@ -129,19 +130,19 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	{control type="RecurrenceControl" RepeatTerminationDate=$RepeatTerminationDate}
     </li>
         <li class="rsv-box-l">
-            <label>{translate key="ReservationTitle"}<br/>
+            <label><b>{translate key="ReservationTitle"}</b><br/>
 			{textbox name="RESERVATION_TITLE" class="input" tabindex="100" value="ReservationTitle"}
             </label>
         </li>
         <li class="rsv-box-l">
-            <label>{translate key="ReservationDescription"}<br/>
+            <label><b>{translate key="ReservationDescription"}</b><br/>
                 <textarea id="description" name="{FormKeys::DESCRIPTION}" class="input-area" rows="2" cols="52"
                           tabindex="110">{$Description}</textarea>
             </label>
         </li>
 	{if $UploadsEnabled}
         <li>
-            <label>{translate key=AttachFile}<br/>
+            <label><b>{translate key=AttachFile}</b><br/>
                 <input type="file" {formname key=RESERVATION_FILE} /> <span class="note">({$MaxUploadSize}
                     MB {translate key=Maximum})</span>
             </label>
@@ -149,7 +150,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	{/if}
 	{if $RemindersEnabled}
         <li>
-            <label>{translate key=SendReminder}</label> <br/>
+            <label><b>{translate key=SendReminder}</b></label> <br/>
 
             <div id="reminderOptionsStart">
                 <input type="checkbox" class="reminderEnabled" {formname key=START_REMINDER_ENABLED}/>
@@ -186,7 +187,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 
 {if $Attributes|count > 0}
 <div class="customAttributes">
-    <h3>{translate key=AdditionalAttributes}</h3>
+    <h3><b>{translate key=AdditionalAttributes}</b></h3>
     <ul>
 		{foreach from=$Attributes item=attribute}
             <li class="customAttribute">

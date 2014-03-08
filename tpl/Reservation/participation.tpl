@@ -19,7 +19,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <div id="reservationParticipation">
 	<ul class="no-style">
 		<li>
-			<label>{translate key="ParticipantList"}<br/>
+			<label><b>{translate key="ParticipantList"}</b><br/>
 				{translate key=Add} <input type="text" id="participantAutocomplete" class="input" style="width:250px;"/>
 				или
 				<button id="promptForParticipants" type="button" class="button" style="display:inline">
@@ -36,7 +36,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		<BR>
 			<BR>
 		<li>
-			<label>{translate key="InvitationList"}<br/>
+			<label><b>{translate key="InvitationList"}</b><br/>
 <!--				{translate key=Add} <input type="text" id="inviteeAutocomplete" class="input" style="width:250px;"/>
 				or
 				<button id="promptForInvitees" type="button" class="button" style="display:inline">

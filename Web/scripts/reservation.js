@@ -196,7 +196,7 @@ function Reservation(opts) {
 		}
 		var x = 'accessory-id=' + id + ',quantity=' + quantity + ',name=' + encodeURIComponent(name);
 
-		elements.accessoriesList.append('<p accessoryId="' + id + '"><span class="quantity">(' + quantity + ')</span> ' + name + '<input type="hidden" name="' + options.accessoryListInputId + '" value="' + x + '"/></p>');
+		elements.accessoriesList.append('<p accessoryId="' + id + '"> ' + name + '<input type="hidden" name="' + options.accessoryListInputId + '" value="' + x + '"/> - <font size="4" color="green"><i><span class="quantity">' + quantity + '</span>шт.</i></font></p>');
 	};
 	
 	var AddResources = function() {

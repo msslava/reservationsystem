@@ -278,7 +278,7 @@ class en_us extends Language
 		$strings['YourReferenceNumber'] = 'Номер Вашего резерва %s';
 		$strings['UpdatingReservation'] = 'Обновить резервирование';
 		$strings['ChangeUser'] = 'Изменить пользователя';
-		$strings['MoreResources'] = 'добавить еще';
+		$strings['MoreResources'] = 'Добавить еще';
 		$strings['ReservationLength'] = 'Продолжительность резерва:';
 		$strings['ParticipantList'] = 'Список участников';
 		$strings['AddParticipants'] = 'Добавить участников';

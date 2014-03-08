@@ -17,7 +17,7 @@ You should have received a copy of the GNU General Public License
 along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 *}
 <div id="repeatDiv">
-	<label>{translate key="RepeatPrompt"}</label>
+	<label style="padding-right: 7px;"><b>{translate key="RepeatPrompt"}</b></label>
 	<select id="repeatOptions" {formname key=repeat_options} class="pulldown" style="width:250px">
 	{foreach from=$RepeatOptions key=k item=v}
 		<option value="{$k}">{translate key=$v['key']}</option>
