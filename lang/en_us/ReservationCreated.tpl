@@ -69,10 +69,30 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		<br/>
 		Некоторое зарезервированное оборудование требует утверждения. Это резервирование будет в ожидании, пока оно не будет одобрено.
 	{/if}
-	
+	</p>
 	<br/>
+<!-- Это таблица для подписи -->
+	<p style="padding-left: 50px;"><b>Подписи сторон:</b></p>
+ 	<table style="padding-left: 50px; border-left-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" border="1">
+   	<col class="col1">
+   	<col span="19" class="coln">
+   	<tr> 
+    <td align="center" bgcolor="#C0C0C0"></td><td align="center"><b>Ф.И.О.</b></td><td align="center"><b>Подпись</b></td>
+   	</tr>
+   	<tr> 
+    <td width="150px;" height="40px;" align="center">Комплектовщик</td><td width="150px;" height="40px;" align="center"></td><td width="150px;" height="40px;" align="center"></td>
+   	</tr>
+    <tr> 
+    <td width="150px;" height="40px;" align="center">Видеоинженер</td><td width="150px;" height="40px;" align="center"></td><td width="150px;" height="40px;"></td>
+   	</tr>
+   	<tr> 
+    <td width="150px;" height="40px;" align="center">Оператор</td><td width="150px;" height="40px;" align="center"></td><td width="150px;" height="40px;"></td>
+   	</tr>
+  </table> 
+  	<br/>
+	<p style="padding-left: 50px;">
 	<a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резерв</a> |
 	<a href="{$ScriptUrl}/{$ICalUrl}">Добавить в календарь</a> |
 	<a href="{$ScriptUrl}">Войти в Систему Планирования</a>
-	<br/></p>
+	</p>
 {include file='..\..\tpl\Email\emailfooter.tpl'}
