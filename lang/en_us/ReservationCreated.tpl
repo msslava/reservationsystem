@@ -74,19 +74,23 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 <!-- Это таблица для подписи -->
 	<p style="padding-left: 50px;"><b>Подписи сторон:</b></p>
  	<table style="padding-left: 50px; border-left-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" border="1">
-   	<col class="col1">
-   	<col span="19" class="coln">
    	<tr> 
-    <td align="center" bgcolor="#C0C0C0"></td><td align="center"><b>Ф.И.О.</b></td><td align="center"><b>Подпись</b></td>
+    <th align="center" bgcolor="#C0C0C0"></th><th align="center"><b>Ф.И.О.</b></th><th align="center"><b>Подпись</b></th>
    	</tr>
    	<tr> 
-    <td width="150px;" height="40px;" align="center">Комплектовщик</td><td width="150px;" height="40px;" align="center"></td><td width="150px;" height="40px;" align="center"></td>
+    <th width="200px;" height="40px;" align="center">Комплектовщик</th><th width="200px;" height="40px;" align="center"></th><th width="200px;" height="40px;" align="center"></th>
    	</tr>
     <tr> 
-    <td width="150px;" height="40px;" align="center">Видеоинженер</td><td width="150px;" height="40px;" align="center"></td><td width="150px;" height="40px;"></td>
+    <th width="200px;" height="40px;" align="center">Видеоинженер</th><th width="200px;" height="40px;" align="center"></th><th width="200px;" height="40px;"></th>
    	</tr>
    	<tr> 
-    <td width="150px;" height="40px;" align="center">Оператор</td><td width="150px;" height="40px;" align="center"></td><td width="150px;" height="40px;"></td>
+    <th width="200px;" height="40px;" align="center">Оператор</th><th width="200px;" height="40px;" align="center"></th><th width="200px;" height="40px;"></th>
+   	</tr>
+ 	<tr>
+	<th colspan="3" width="400px;" align="center" bgcolor="#C0C0C0">Замечания:</th>
+	</tr>  	
+	<tr>
+   		<th colspan="3" width="400px;" height="200px;" align="center"></th>
    	</tr>
   </table> 
   	<br/>
