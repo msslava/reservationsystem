@@ -84,7 +84,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			Аккумуляторы AA: {$attribute ->Value}<br/>	
 			<br/>
 		{elseif $smarty.foreach.row.index == 0}
-			<font size="2" color="purple"><b><u>Предварительное резервирование</b></u>: {$attribute ->Value}</font><br/>
+			<font size="2" color="purple"><b><u>Окончательное резервирование</b></u>: {$attribute ->Value}</font><br/>
 			<br/>
 		{/if}			
             {/foreach}
