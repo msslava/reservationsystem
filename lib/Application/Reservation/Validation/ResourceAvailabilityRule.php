@@ -161,7 +161,16 @@ class ResourceAvailabilityRule implements IReservationValidationRule
 			$errorString->Append($date);
 			$errorString->Append("\n");
 		}
-		
+		foreach($conflicts as $conflict)
+      
+      {
+         $resources[] = $conflict->ResourceName;
+      }
+      foreach ($resources as $resource)
+      {
+         $errorString->Append($resource);
+         $errorString->Append("\n");
+      }
 		return $errorString->ToString();
 	}
 }
