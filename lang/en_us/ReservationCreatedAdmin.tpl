@@ -20,7 +20,7 @@
 <TR>
 	<TH COLSPAN="2" style="font-weight : 100;">{if $ResourceNames|count > 1}{foreach from=$ResourceNames item=resourceName}{$resourceName}<br/>{/foreach}{else}{$ResourceName}<br/>{/if}</TH>
 	<TH COLSPAN="2" style="font-weight : 100;" align="left">{if $Accessories|count > 0}{foreach from=$Accessories item=accessory}
-		 {$accessory->Name} - <font size="3" color="green"><i>{$accessory->QuantityReserved} шт.</i></font><br/>
+		 <input type="checkbox" style="margin-top: 0px;">{$accessory->Name} - <font size="3" color="green"><i>{$accessory->QuantityReserved} шт.</i></font><br/>
 		{/foreach}
 	{/if}</TH>
 </TR>
@@ -31,13 +31,13 @@
 <TR>
 	<TH COLSPAN="2" style="font-weight : 100;" align="left">{foreach from=$CustomAttributes key=k item=customAtt name=row}
 		{if $smarty.foreach.row.index == 0}
-			Аккумуляторы для Sony FS700: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
+			<input type="checkbox" style="margin-top: 0px;">Аккумуляторы для Sony FS700: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
 		{elseif $smarty.foreach.row.index == 1}
-			Аккумуляторы для Canon D60: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
+			<input type="checkbox" style="margin-top: 0px;">Аккумуляторы для Canon D60: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
 		{elseif $smarty.foreach.row.index == 2}
-			Аккумуляторы для GoPro: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
+			<input type="checkbox" style="margin-top: 0px;">Аккумуляторы для GoPro: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
 		{elseif $smarty.foreach.row.index == 3}
-			Аккумуляторы AA: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>{/if}			
+			<input type="checkbox" style="margin-top: 0px;">Аккумуляторы AA: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>{/if}			
 	{/foreach}<font></i></TH>
 <TH COLSPAN="2" style="font-weight : 100;">{$Description}</TH>
 <TR>
