@@ -1,5 +1,5 @@
 {include file='..\..\tpl\Email\emailheader.tpl'}
-<p align="center"><b>{$UserName}</b></p>
+<p align="right"><b>{$UserName}</b> | <a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резерв</a> </p>
 <TABLE BORDER="1"> 
 <TR> 
  <TH width="25%" align="center" bgcolor="#C0C0C0">Окончательное резервирование</TH>
