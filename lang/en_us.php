@@ -37,7 +37,7 @@ class en_us extends Language
 		$dates['general_date'] = 'd.m.Y';
 		$dates['general_datetime'] = 'd.m.Y H:i:s';
 		$dates['schedule_daily'] = 'l, d.m.Y';
-		$dates['reservation_email'] = 'd.m.Y @ H:i (e)';
+		$dates['reservation_email'] = 'd.m.Y @ H:i';
 		$dates['res_popup'] = 'd.m.Y H:i';
 		$dates['dashboard'] = 'l, d.m.Y H:i';
 		$dates['period_time'] = 'H:i';
