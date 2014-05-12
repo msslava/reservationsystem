@@ -3,20 +3,25 @@
 <TABLE BORDER="1"> 
 <TR> 
  <TH width="25%" align="center" bgcolor="#C0C0C0">Карты памяти</TH>
- <TH width="25%" align="center" bgcolor="#C0C0C0">Название проекта</TH>
-<TH width="25%" align="center" bgcolor="#C0C0C0">Время резервирования</TH>
-<TH width="25%" align="center" bgcolor="#C0C0C0">Пользователь</TH>  
+ <TH width="25%" align="center" bgcolor="#C0C0C0">Номера КП</TH>
+<TH width="25%" align="center" bgcolor="#C0C0C0">Название проекта</TH>
+<TH width="25%" align="center" bgcolor="#C0C0C0">Время резервирования</TH>  
 </TR> 
 <TR> 
   	<TH style="font-weight : 100;" align="left">{foreach from=$CustomAttributes key=k item=customAtt name=row}
   		{if $smarty.foreach.row.index == 4}
-			<input type="checkbox" style="margin-top: 0px;">Карты памяти (64ГБ): <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
+			<input type="checkbox" style="margin-top: 0px;">КП (64ГБ): <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
 		{elseif $smarty.foreach.row.index == 6}
-			<input type="checkbox" style="margin-top: 0px;">Карты памяти для GoPro: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>{/if}			
+			<input type="checkbox" style="margin-top: 0px;">КП для GoPro: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>{/if}			
 	{/foreach}</TH>
-  	<TH style="font-weight : 100;">{$Title}</TH>
-	<TH style="font-weight : 100;">{formatdate date=$StartDate key=reservation_email}<BR/>{formatdate date=$EndDate key=reservation_email}</TH>
-	<TH style="font-weight : 100;">{$UserName}</TH> 
+  	<TH style="font-weight : 100;" align="center">{foreach from=$CustomAttributes key=k item=customAtt name=row}
+  		{if $smarty.foreach.row.index == 5}
+			<font size="4" color="purple"><i>{$customAtt ->Value}</font></i><br/>
+		{elseif $smarty.foreach.row.index == 7}
+			<font size="4" color="purple"><i>{$customAtt ->Value}</font></i><br/>{/if}			
+	{/foreach}</TH>
+	<TH style="font-weight : 100;">{$Title}</TH>
+	<TH style="font-weight : 100;">{formatdate date=$StartDate key=reservation_email}<BR/>{formatdate date=$EndDate key=reservation_email}</TH> 
 </TR>
 <TR>
 	<TH COLSPAN="2" align="center" bgcolor="#C0C0C0">Оборудование</TH>
