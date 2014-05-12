@@ -2,13 +2,18 @@
 <p align="right"><b>{$UserName}</b> | <a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резерв</a> </p>
 <TABLE BORDER="1"> 
 <TR> 
- <TH width="25%" align="center" bgcolor="#C0C0C0">Окончательное резервирование</TH>
+ <TH width="25%" align="center" bgcolor="#C0C0C0">Карты памяти</TH>
  <TH width="25%" align="center" bgcolor="#C0C0C0">Название проекта</TH>
 <TH width="25%" align="center" bgcolor="#C0C0C0">Время резервирования</TH>
 <TH width="25%" align="center" bgcolor="#C0C0C0">Пользователь</TH>  
 </TR> 
 <TR> 
-  	<TH><font size="5" color="purple">{foreach from=$CustomAttributes key=k item=customAtt name=row}{if $smarty.foreach.row.index == 4}{$customAtt ->Value}{/if}{/foreach}</font></TH>
+  	<TH style="font-weight : 100;" align="left">{foreach from=$CustomAttributes key=k item=customAtt name=row}
+  		{if $smarty.foreach.row.index == 4}
+			<input type="checkbox" style="margin-top: 0px;">Карты памяти (64ГБ): <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
+		{elseif $smarty.foreach.row.index == 6}
+			<input type="checkbox" style="margin-top: 0px;">Карты памяти для GoPro: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>{/if}			
+	{/foreach}</TH>
   	<TH style="font-weight : 100;">{$Title}</TH>
 	<TH style="font-weight : 100;">{formatdate date=$StartDate key=reservation_email}<BR/>{formatdate date=$EndDate key=reservation_email}</TH>
 	<TH style="font-weight : 100;">{$UserName}</TH> 
