@@ -53,7 +53,11 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			Аккумуляторы AA: {$customAtt ->Value}<br/>	
 			<br/>
 		{elseif $smarty.foreach.row.index == 4}
-			<font size="4" color="purple"><b><u>Окончательное резервирование</b></u>: {$customAtt ->Value}</font><br/>
+			Карты памяти (64Гб)</b></u>: {$customAtt ->Value}<br/>
+			{elseif $smarty.foreach.row.index == 5}
+			Карты памяти для GoPro</b></u>: {$customAtt ->Value}<br/>
+			{elseif $smarty.foreach.row.index == 6}
+			<font size="4" color="purple"><b><u>Номера Карт Памяти</b></u>: {$customAtt ->Value}</font><br/>
 		{/if}			
 	{/foreach}
 
@@ -70,29 +74,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 		Некоторое зарезервированное оборудование требует утверждения. Это резервирование будет в ожидании, пока оно не будет одобрено.
 	{/if}
 	</p>
-	<br/>
-<!-- Это таблица для подписи -->
-	<p style="padding-left: 50px;"><b>Подписи сторон:</b></p>
- 	<table style="padding-left: 50px; border-left-width: 0px; border-top-width: 0px; border-bottom-width: 0px; border-right-width: 0px;" border="1">
-   	<tr> 
-    <th align="center" bgcolor="#C0C0C0"></th><th align="center"><b>Ф.И.О.</b></th><th align="center"><b>Подпись</b></th>
-   	</tr>
-   	<tr> 
-    <th width="200px;" height="40px;" align="center">Комплектовщик</th><th width="200px;" height="40px;" align="center"></th><th width="200px;" height="40px;" align="center"></th>
-   	</tr>
-    <tr> 
-    <th width="200px;" height="40px;" align="center">Видеоинженер</th><th width="200px;" height="40px;" align="center"></th><th width="200px;" height="40px;"></th>
-   	</tr>
-   	<tr> 
-    <th width="200px;" height="40px;" align="center">Оператор</th><th width="200px;" height="40px;" align="center"></th><th width="200px;" height="40px;"></th>
-   	</tr>
- 	<tr>
-	<th colspan="3" width="400px;" align="center" bgcolor="#C0C0C0">Замечания:</th>
-	</tr>  	
-	<tr>
-   		<th colspan="3" width="400px;" height="200px;" align="center"></th>
-   	</tr>
-  </table> 
+
   	<br/>
 	<p style="padding-left: 50px;">
 	<a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резерв</a> |

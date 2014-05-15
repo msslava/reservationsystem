@@ -65,7 +65,7 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	<!-- {$ReservationId} -->
 </div>
 <br/>
-<!-- На всякий случай можно ввести этот код, если будут проблемы
+<!-- На всякий случай можно ввести этот код, если будут проблемы 
 <div class="attributes">
             {foreach from=$attributes item=attribute name=attribute_loop}
 		{$attribute->AttributeLabel}: {$attribute->Value}
@@ -74,18 +74,8 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 	</div> -->
 <div class="attributes">
             {foreach from=$attributes item=attribute name=row}
-		{if $smarty.foreach.row.index == 3}
-			Аккумуляторы для Sony FS700: {$attribute ->Value}<br/>
-		{elseif $smarty.foreach.row.index == 1}
-			Аккумуляторы для Canon D60: {$attribute ->Value}<br/>
-		{elseif $smarty.foreach.row.index == 2}
-			Аккумуляторы для GoPro: {$attribute ->Value}<br/>
-		{elseif $smarty.foreach.row.index == 4}
-			Аккумуляторы AA: {$attribute ->Value}<br/>	
-			<br/>
-		{elseif $smarty.foreach.row.index == 0}
-			<font size="2" color="purple"><b><u>Окончательное резервирование</b></u>: {$attribute ->Value}</font><br/>
-			<br/>
+		{if $smarty.foreach.row.index == 5}
+			<br/><font size="2" color="purple"><b><u>К.П.</b></u>: {$attribute ->Value}</font><br/>
 		{/if}			
             {/foreach}
 	</div>

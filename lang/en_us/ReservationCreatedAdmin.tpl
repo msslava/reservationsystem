@@ -11,11 +11,11 @@
   	<TH style="font-weight : 100;" align="left">{foreach from=$CustomAttributes key=k item=customAtt name=row}
   		{if $smarty.foreach.row.index == 4}
 			<input type="checkbox" style="margin-top: 0px;">КП (64ГБ): <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>
-		{elseif $smarty.foreach.row.index == 6}
+		{elseif $smarty.foreach.row.index == 5}
 			<input type="checkbox" style="margin-top: 0px;">КП для GoPro: <font size="3" color="green"><i>{$customAtt ->Value}&nbsp;шт.</font></i><br/>{/if}			
 	{/foreach}</TH>
   	<TH style="font-weight : 100;" align="center">{foreach from=$CustomAttributes key=k item=customAtt name=row}
-  		{if $smarty.foreach.row.index == 5}
+  		{if $smarty.foreach.row.index == 6}
 			<font size="4" color="purple"><i>{$customAtt ->Value}</font></i><br/>
 		{elseif $smarty.foreach.row.index == 7}
 			<font size="4" color="purple"><i>{$customAtt ->Value}</font></i><br/>{/if}			
