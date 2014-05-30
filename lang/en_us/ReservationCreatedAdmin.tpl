@@ -1,12 +1,23 @@
 {include file='..\..\tpl\Email\emailheader.tpl'}
 <p align="right"><b>{$UserName}</b> | <a href="{$ScriptUrl}/{$ReservationUrl}">Посмотреть этот резерв</a> </p>
 <TABLE BORDER="1"> 
-<TR> 
+<TR>
+	<TH COLSPAN="2" align="center" bgcolor="#C0C0C0">Аксессуары</TH>
+	<TH width="25%" align="center" bgcolor="#C0C0C0">Название проекта</TH>
+<TH width="25%" align="center" bgcolor="#C0C0C0">Время резервирования</TH> 
+</TR>
+<TR>
+<TH COLSPAN="2" ROWSPAN="5" style="font-weight : 100;" align="left">{if $Accessories|count > 0}{foreach from=$Accessories item=accessory}
+		 <input type="checkbox" style="margin-top: 0px;">{$accessory->Name} - <font size="3" color="green"><i>{$accessory->QuantityReserved} шт.</i></font><br/>
+		{/foreach}
+	{/if}</TH> 
+	<TH style="font-weight : 100;">{$Title}</TH>
+	<TH style="font-weight : 100;">{formatdate date=$StartDate key=reservation_email}<BR/>{formatdate date=$EndDate key=reservation_email}</TH> 
+</TR>
+ <TR>
  <TH width="25%" align="center" bgcolor="#C0C0C0">Карты памяти</TH>
  <TH width="25%" align="center" bgcolor="#C0C0C0">Номера КП</TH>
-<TH width="25%" align="center" bgcolor="#C0C0C0">Название проекта</TH>
-<TH width="25%" align="center" bgcolor="#C0C0C0">Время резервирования</TH>  
-</TR> 
+</TR>
 <TR> 
   	<TH style="font-weight : 100;" align="left">{foreach from=$CustomAttributes key=k item=customAtt name=row}
   		{if $smarty.foreach.row.index == 4}
@@ -20,20 +31,13 @@
 		{elseif $smarty.foreach.row.index == 7}
 			<font size="4" color="purple"><i>{$customAtt ->Value}</font></i><br/>{/if}			
 	{/foreach}</TH>
-	<TH style="font-weight : 100;">{$Title}</TH>
-	<TH style="font-weight : 100;">{formatdate date=$StartDate key=reservation_email}<BR/>{formatdate date=$EndDate key=reservation_email}</TH> 
-</TR>
+	</TR>
 <TR>
 	<TH COLSPAN="2" align="center" bgcolor="#C0C0C0">Оборудование</TH>
-	<TH COLSPAN="2" align="center" bgcolor="#C0C0C0">Аксессуары</TH>
-</TR>
+	</TR>
 <TR>
 	<TH COLSPAN="2" style="font-weight : 100;">{if $ResourceNames|count > 1}{foreach from=$ResourceNames item=resourceName}{$resourceName}<br/>{/foreach}{else}{$ResourceName}<br/>{/if}</TH>
-	<TH COLSPAN="2" style="font-weight : 100;" align="left">{if $Accessories|count > 0}{foreach from=$Accessories item=accessory}
-		 <input type="checkbox" style="margin-top: 0px;">{$accessory->Name} - <font size="3" color="green"><i>{$accessory->QuantityReserved} шт.</i></font><br/>
-		{/foreach}
-	{/if}</TH>
-</TR>
+	</TR>
 <TR>
 	<TH COLSPAN="2" align="center" bgcolor="#C0C0C0">Аккумуляторы</TH>
 	<TH COLSPAN="2" align="center" bgcolor="#C0C0C0">Описание</TH>
