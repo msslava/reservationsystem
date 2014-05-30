@@ -56,7 +56,8 @@ along with phpScheduleIt.  If not, see <http://www.gnu.org/licenses/>.
 			Карты памяти (64Гб)</b></u>: {$customAtt ->Value}<br/>
 			{elseif $smarty.foreach.row.index == 5}
 			Карты памяти для GoPro</b></u>: {$customAtt ->Value}<br/>
-			{elseif $smarty.foreach.row.index == 6}
+			<BR>
+				{elseif $smarty.foreach.row.index == 6}
 			<font size="4" color="purple"><b><u>Номера Карт Памяти</b></u>: {$customAtt ->Value}</font><br/>
 		{/if}			
 	{/foreach}
