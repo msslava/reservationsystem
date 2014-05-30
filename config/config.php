@@ -10,7 +10,7 @@ $conf['settings']['default.language'] = 'en_us';
 $conf['settings']['script.url'] = 'http://sklad.eurokino.tv/Web';
 $conf['settings']['password.pattern'] = '/^[^\\s]{6,}$/i';
 $conf['settings']['schedule']['show.inaccessible.resources'] = 'false';
-$conf['settings']['schedule']['reservation.label'] = '{name}';
+$conf['settings']['schedule']['reservation.label'] = '{name} | <b><font style=color:#ffb540>{title}</font></b>';
 $conf['settings']['schedule']['hide.blocked.periods'] = 'false';
 $conf['settings']['image.upload.directory'] = 'http://sklad.eurokino.tv/Web/uploads/images';
 $conf['settings']['image.upload.url'] = 'uploads/images';
